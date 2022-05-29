@@ -45,7 +45,18 @@ a {
 }
 
 /* <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- --> */
-
+.oveflow-bg {
+  background-image: url(../images/hero-bg.jpg);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 800px;
+  width: 100%;
+  content: '';
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .header-nav {
 }
 .container-header {
@@ -120,10 +131,6 @@ a {
 
 /* <!-- -------------------------------------------------------------------------------- HERO ----------------------------------------------------------------------------- --> */
 .header-hero {
-  background-image: url(../images/hero-bg.jpg);
-
-  content: '';
-  background-size: cover;
 }
 .hero {
   padding-top: 205px;
@@ -132,7 +139,8 @@ a {
 .hero-uptext {
   margin-left: 33px;
   font-family: 'Tinos', serif;
-  font-size: 80px;
+  font-weight: 400;
+  font-size: 50px;
   line-height: calc(92 / 80);
 
   color: #d67e35;
@@ -149,6 +157,7 @@ a {
 }
 .hero-text-overflow {
   position: relative;
+  width: 100%;
 }
 .hero-text::before {
   position: absolute;
@@ -195,3 +204,65 @@ a {
   color: #ffffff;
   background: #ff7400;
 }
+
+/* <!-- -------------------------------------------------------------------------------- HISTORY ----------------------------------------------------------------------------- --> */
+
+.history {
+  position: relative;
+}
+.history-list {
+  position: absolute;
+  top: -107px;
+  display: flex;
+  position: relative;
+}
+.history-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.history-item {
+  background-color: #fff;
+  background: #ffffff;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+}
+.history-thmb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 30px 20px 30px;
+  width: 328px;
+}
+
+.history-svg {
+  fill: #bc9060;
+  padding-bottom: 4px;
+}
+.history-list-title {
+  padding-bottom: 20px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(30 / 26);
+
+  color: #2c2c2c;
+}
+.history-span {
+  color: #bc9060;
+}
+.history-list-text {
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(30 / 26);
+
+  color: #656363;
+}
+
+/* 
+  background-image: url(../images/hero-bg.jpg);
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+  content: '';
+  background-size: cover; */

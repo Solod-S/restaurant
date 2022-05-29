@@ -19,8 +19,9 @@
   </head>
   <body>
     <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
-    <div class="header-hero">
+
     <header class="header-nav">
+      <div class="oveflow-bg"></div>
       <div class="container container-header">
         <a class="header-nav-logo" href="">
           <img src="./images/logo.svg" alt="logo" width="68px"
@@ -41,7 +42,10 @@
         </ul>
         <div class="header-nav-contact">
           <a class="header-nav-tell" href="tellto:+9998887654">
-            <svg class="header-nav-icon" width="23px" height="23px"><use href="./images/symbol-defs.svg#icon-phone"></use></svg> +999-888-76-54</a
+            <svg class="header-nav-icon" width="23px" height="23px">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            +999-888-76-54</a
           >
           <p class="header-nav-text">Свяжитесь с нами для бронирования</p>
         </div>
@@ -49,17 +53,58 @@
       </div>
     </header>
     <main>
-        <section class="hero">
-          <div class="container">
-          <p class="hero-uptext"> Добро пожаловать в</p>
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero-uptext">Добро пожаловать в</h2>
           <h1 class="hero-title">Наш ресторан</h1>
           <div class="hero-text-overflow">
-          <p class="hero-text">Дом лучшей еды</p>
+            <p class="hero-text">Дом лучшей еды</p>
           </div>
-          <button class="hero-btn" type="button"> <span lang="en">view menu</span></button>
-          </div>
+          <button class="hero-btn" type="button"><span lang="en">view menu</span></button>
+        </div>
       </section>
-      </div>
+      <!-- -------------------------------------------------------------------------------- HISTORY ----------------------------------------------------------------------------- -->
+      <section class="history">
+        <div class="container">
+          <ul class="history-list">
+            <li class="history-item">
+              <div class="history-thmb">
+                <svg class="history-svg" width="87px" height="87px">
+                  <use href="./images/symbol-defs.svg#icon-kolpac"></use>
+                </svg>
+                <h3 class="history-list-title">
+                  Магическая <span class="history-span">Атмосфера</span>
+                </h3>
+                <p class="history-list-text">
+                  В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
+                </p>
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-thmb">
+                <svg class="history-svg" width="87px" height="87px">
+                  <use href="./images/symbol-defs.svg#icon-kolpac"></use>
+                </svg>
+                <h3 class="history-list-title">
+                  Лучшее качество <span class="history-span">Еды</span>
+                </h3>
+                <p class="history-list-text">Качество нашей Еды - отменное!</p>
+              </div>
+            </li>
+            <li class="history-item">
+              <div class="history-thmb">
+                <svg class="history-svg" width="87px" height="87px">
+                  <use href="./images/symbol-defs.svg#icon-kolpac"></use>
+                </svg>
+                <h3 class="history-list-title">Недорогая <span class="history-span">Еда</span></h3>
+                <p class="history-list-text">
+                  Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
