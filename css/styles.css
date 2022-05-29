@@ -1,3 +1,12 @@
+/* font-family: 'Cookie', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Tinos', serif; */
+:root {
+}
+
+body {
+}
+
 h1,
 h2,
 h3,
@@ -11,6 +20,7 @@ li {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 p,
@@ -19,9 +29,159 @@ img {
 }
 ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- --> */
+
+.header-nav {
+}
+.container-header {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+.header-nav-logo {
+}
+.header-nav-list {
+  display: flex;
+  padding-left: 268px;
+}
+.header-nav-item:not(:first-child) {
+  margin-left: 20px;
+}
+.header-nav-item {
+}
+.header-nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+
+  color: #ffffff;
+}
+.header-nav-contact {
+  max-width: 159px;
+  margin-left: auto;
+}
+
+.header-nav-tell {
+  margin-bottom: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+
+  color: #ffffff;
+}
+
+.header-nav-icon {
+  fill: #ffffff;
+}
+
+.header-nav-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+
+  color: #ffffff;
+}
+
+.header-nav-btn {
+  margin-left: 45px;
+  padding: 14px 18px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+
+  color: #ffffff;
+  background: #ff7400;
+}
+
+/* <!-- -------------------------------------------------------------------------------- HERO ----------------------------------------------------------------------------- --> */
+.header-hero {
+  background-image: url(../images/hero-bg.jpg);
+
+  content: '';
+  background-size: cover;
+}
+.hero {
+  padding-top: 205px;
+  padding-bottom: 231px;
+}
+.hero-uptext {
+  margin-left: 33px;
+  font-family: 'Tinos', serif;
+  font-size: 80px;
+  line-height: calc(92 / 80);
+
+  color: #d67e35;
+}
+
+.hero-title {
+  margin-bottom: 12px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: calc(92 / 80);
+
+  color: #d67e35;
+}
+.hero-text-overflow {
+  position: relative;
+}
+.hero-text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(1%, 1%);
+  content: '';
+  width: 61px;
+  height: 2px;
+
+  background: #c4c4c4;
+}
+
+.hero-text {
+  margin-left: 174px;
+  margin-bottom: 21px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+
+  color: #ffffff;
+}
+.hero-btn {
+  margin-left: 190px;
+  padding: 14px 28px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+
+  color: #ffffff;
+  background: #ff7400;
 }

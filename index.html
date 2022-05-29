@@ -9,33 +9,57 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Tinos&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
+    <div class="header-hero">
     <header class="header-nav">
-      <a class="header-nav-logo" href="">
-        <img src="./images/logo.svg" alt="logo" width="68px"
-      /></a>
-      <ul class="header-nav-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="">Главная</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="">Меню</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="">О Нас</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="">Бронь</a>
-        </li>
-      </ul>
-      <a class="header-nav-tell" href="tellto:+9998887654">+999-888-76-54</a>
-      <p class="header-nav-text">Свяжитесь с нами для бронирования</p>
-      <button class="header-nav-btn" type="button">Заказ столика</button>
+      <div class="container container-header">
+        <a class="header-nav-logo" href="">
+          <img src="./images/logo.svg" alt="logo" width="68px"
+        /></a>
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="">Главная</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="">Меню</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="">О Нас</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="">Бронь</a>
+          </li>
+        </ul>
+        <div class="header-nav-contact">
+          <a class="header-nav-tell" href="tellto:+9998887654">
+            <svg class="header-nav-icon" width="23px" height="23px"><use href="./images/symbol-defs.svg#icon-phone"></use></svg> +999-888-76-54</a
+          >
+          <p class="header-nav-text">Свяжитесь с нами для бронирования</p>
+        </div>
+        <button class="header-nav-btn" type="button">Заказ столика</button>
+      </div>
     </header>
     <main>
-      <section></section>
+        <section class="hero">
+          <div class="container">
+          <p class="hero-uptext"> Добро пожаловать в</p>
+          <h1 class="hero-title">Наш ресторан</h1>
+          <div class="hero-text-overflow">
+          <p class="hero-text">Дом лучшей еды</p>
+          </div>
+          <button class="hero-btn" type="button"> <span lang="en">view menu</span></button>
+          </div>
+      </section>
+      </div>
     </main>
     <footer></footer>
   </body>
