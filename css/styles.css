@@ -152,9 +152,19 @@ a {
 }
 .hero-text::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(1%, 1%);
+  top: 50%;
+  left: 104px;
+  content: '';
+  width: 61px;
+  height: 2px;
+
+  background: #c4c4c4;
+}
+
+.hero-text::after {
+  position: absolute;
+  top: 50%;
+  left: 350px;
   content: '';
   width: 61px;
   height: 2px;
