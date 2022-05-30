@@ -43,7 +43,9 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.color-span {
+  color: #bc9060;
+}
 /* <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- --> */
 .oveflow-bg {
   background-image: url(../images/hero-bg.jpg);
@@ -208,17 +210,16 @@ a {
 /* <!-- -------------------------------------------------------------------------------- HISTORY ----------------------------------------------------------------------------- --> */
 
 .history {
-  padding-bottom: 371px;
+  padding-bottom: 182px;
   position: relative;
 }
 .history-list {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   top: -107px;
   display: flex;
   position: relative;
-}
-.history-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .history-item {
@@ -247,9 +248,7 @@ a {
 
   color: #2c2c2c;
 }
-.color-span {
-  color: #bc9060;
-}
+
 .history-list-text {
   font-family: 'Tinos', serif;
   font-weight: 400;
@@ -263,11 +262,12 @@ a {
 }
 .history-block {
   display: flex;
+  flex-grow: 1;
 }
 .history-block-title {
   text-align: center;
   margin-bottom: 21px;
-  font-family: 'Tinos';
+  font-family: 'Tinos', serif;
   font-weight: 400;
   font-size: 54px;
   line-height: calc(62 / 54);
@@ -286,6 +286,7 @@ a {
   color: #656363;
 }
 .history-block-list {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -312,6 +313,157 @@ a {
 .history-block-img {
   margin-left: auto;
   box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+}
+
+.history-block-second {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.history-block-img-zero {
+  position: absolute;
+  left: 76%;
+  top: 2%;
+}
+.history-block-img-first {
+  position: absolute;
+  left: 68%;
+  top: -3%;
+}
+.history-block-img-second {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  mix-blend-mode: normal;
+  box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+}
+
+.history-block-img-thrd {
+  position: absolute;
+  left: 77%;
+  top: 43%;
+  box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* <!-- -------------------------------------------------------------------------------- CELEBRATION ----------------------------------------------------------------------------- --> */
+.celebration {
+  padding-top: 80px;
+  padding-bottom: 104px;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../images/celebration.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.celebration .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.celebration-wrapper {
+  width: 601px;
+}
+.celebration-title {
+  padding-bottom: 20px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: calc(60 / 52);
+
+  color: #d67e34;
+}
+.celebration-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(33 / 24);
+
+  color: #ffffff;
+}
+.celebration-wrapper-scnd {
+  display: flex;
+  align-items: center;
+}
+.celebration-btn {
+  margin-right: 20px;
+  padding: 14px 19px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+
+  color: #ffffff;
+  background: #ff7400;
+}
+/* <!-- -------------------------------------------------------------------------------- OUR DISH ----------------------------------------------------------------------------- --> */
+.our-dish {
+  padding-bottom: 140px;
+  padding-top: 140px;
+}
+
+.our-dish-title {
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: calc(62 / 54);
+
+  color: #000000;
+}
+.color-span {
+}
+.our-wrapper {
+  display: flex;
+}
+.our-dish-list-img {
+  margin-right: 30px;
+}
+.our-dish-img-item {
+  margin-left: 30px;
+}
+.our-dish-img-item:not(:last-child) {
+  margin-bottom: 36px;
+}
+.our-dish-item:first-child {
+  margin-top: 65px;
+}
+.our-dish-img {
+  display: block;
+}
+.our-dish-list {
+  width: 464px;
+}
+.our-dish-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 134px;
+  justify-content: space-between;
+}
+.our-dish-text {
+  font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(30 / 26);
+
+  color: #000000;
+}
+
+.point::after {
+  content: '';
+  position: absolute;
+  width: 139px;
+  top: 72%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px dashed #000000;
+  /* background: black;
+  border-radius: 2px; */
 }
 
 /* 
