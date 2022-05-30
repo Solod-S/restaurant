@@ -420,17 +420,21 @@ a {
 .our-wrapper {
   display: flex;
 }
+.our-dish-img-main {
+  box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.1);
+}
 .our-dish-list-img {
   margin-right: 30px;
 }
 .our-dish-img-item {
   margin-left: 20px;
+  box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.1);
 }
 .our-dish-img-item:not(:last-child) {
   margin-bottom: 25px;
 }
 .our-dish-item:first-child {
-  margin-top: 65px;
+  padding-top: 65px;
 }
 .our-dish-img {
   display: block;
@@ -441,8 +445,10 @@ a {
 .our-dish-item {
   position: relative;
   display: flex;
-  margin-bottom: 134px;
   justify-content: space-between;
+}
+.our-dish-item:not(:last-child) {
+  margin-bottom: 134px;
 }
 .our-dish-text {
   font-family: 'Tinos';
