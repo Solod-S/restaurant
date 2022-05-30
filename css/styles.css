@@ -145,7 +145,8 @@ a {
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1920px;
+  max-width: 1440px;
+  height: 800px;
   margin: 0 auto;
   padding-top: 205px;
   padding-bottom: 231px;
@@ -256,6 +257,7 @@ a {
   font-family: 'Tinos', serif;
   font-weight: 400;
   font-size: 26px;
+
   line-height: calc(30 / 26);
 
   color: #2c2c2c;
@@ -265,6 +267,7 @@ a {
   font-family: 'Tinos', serif;
   font-weight: 400;
   font-size: 26px;
+  text-align: center;
   line-height: calc(30 / 26);
 
   color: #656363;
@@ -363,7 +366,7 @@ a {
   padding-top: 80px;
   padding-bottom: 104px;
   content: '';
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   /* width: 100%;
   height: 100%; */
