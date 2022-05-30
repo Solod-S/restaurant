@@ -55,7 +55,7 @@ a {
   left: 0;
   height: 800px;
   width: 100%;
-  content: '';
+
   background-size: cover;
   background-repeat: no-repeat;
 }
