@@ -143,6 +143,7 @@ a {
 }
 .hero {
   background-image: url(../images/hero-bg.jpg);
+  background-color: #656363;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1440px;
@@ -372,6 +373,7 @@ a {
   height: 100%; */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(../images/celebration.jpg);
+  background-color: #656363;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -468,7 +470,7 @@ a {
   margin-bottom: 134px;
 }
 .our-dish-text {
-  font-family: 'Tinos';
+  font-family: 'Tinos', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -487,6 +489,115 @@ a {
   border-bottom: 1px dashed #000000;
   /* background: black;
   border-radius: 2px; */
+}
+
+/* <!-- -------------------------------------------------------------------------------- MENU ----------------------------------------------------------------------------- --> */
+.menu {
+  background-image: url(../images/menu-bg.jpg);
+  max-width: 1440px;
+  margin: 0 auto;
+  background-size: cover;
+  height: 1034px;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 225px;
+}
+.menu-title {
+  margin-bottom: 138px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 54px;
+  line-height: calc(62 / 54);
+
+  color: #ffffff;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-list {
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  margin-right: 30px;
+}
+.menu-item {
+  width: 350px;
+  background-color: #ffffff;
+  padding: 80px 63px 29px 62px;
+}
+.menu-img {
+  position: relative;
+  margin-bottom: 22px;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background-image: url(..//images/burger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #bc9060;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background-color: #d67e34;
+  border: 7px solid #ffffff;
+}
+
+.menu-price-money {
+  font-family: 'Cookie', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+/* .menu-img::before {
+  position: relative;
+  display: block;
+  content: '';
+  background-image: url(../images/burger-svg.svg);
+  background-repeat: no-repeat;
+  height: 100px;
+} */
+.menu-subtitle {
+  margin-bottom: 17px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(30 / 26);
+
+  color: #000000;
+}
+.menu-text {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #000000;
+}
+.menu-btn {
+  padding: 14px 68px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: calc(22 / 16);
+
+  color: #ffffff;
+  background: #d67e34;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* 
