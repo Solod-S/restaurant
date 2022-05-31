@@ -479,18 +479,39 @@ a {
   color: #000000;
 }
 
-.point::after {
+.point1::after {
   content: '';
   position: absolute;
   width: 139px;
-  top: 72%;
+  top: 91%;
   left: 65%;
   transform: translate(-50%, -50%);
   border-bottom: 1px dashed #000000;
   /* background: black;
   border-radius: 2px; */
 }
-
+.point2::after {
+  content: '';
+  position: absolute;
+  width: 139px;
+  top: 77%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px dashed #000000;
+  /* background: black;
+  border-radius: 2px; */
+}
+.point3::after {
+  content: '';
+  position: absolute;
+  width: 139px;
+  top: 77%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px dashed #000000;
+  /* background: black;
+  border-radius: 2px; */
+}
 /* <!-- -------------------------------------------------------------------------------- MENU ----------------------------------------------------------------------------- --> */
 .menu {
   background-image: url(../images/menu-bg.jpg);
