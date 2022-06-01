@@ -738,7 +738,7 @@ a {
   display: flex;
 }
 .dishes-item-thmb-1 li:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 
 .large {
@@ -769,7 +769,7 @@ a {
   margin-bottom: 30px;
 }
 .dishes-item-thmb-2 li:not(:first-child) {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 .dishes-item-2 {
 }
