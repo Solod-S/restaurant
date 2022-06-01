@@ -595,6 +595,7 @@ a {
   margin-bottom: 17px;
   font-family: 'Tinos', serif;
   font-weight: 400;
+  text-align: center;
   font-size: 26px;
   line-height: calc(30 / 26);
 
@@ -718,7 +719,20 @@ a {
   display: flex;
 }
 .dishes-list-1 {
+  position: relative;
   margin-right: 10px;
+}
+.dishes-list-1::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  transform: translatex(-616%);
+  content: '';
+  width: 30px;
+  height: 100px;
+
+  background-color: #ff0000;
 }
 .dishes-item-thmb-1 {
   display: flex;
@@ -735,7 +749,20 @@ a {
 .dishes-img-1 {
 }
 .dishes-list-2 {
+  position: relative;
   width: 578px;
+}
+.dishes-list-2::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  transform: translatex(2317%);
+  content: '';
+  width: 30px;
+  height: 100px;
+
+  background-color: #ff0000;
 }
 .dishes-item-thmb-2 {
   display: flex;
