@@ -742,7 +742,7 @@ a {
 }
 
 .large {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .dishes-item-1 {
 }
@@ -766,7 +766,7 @@ a {
 }
 .dishes-item-thmb-2 {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .dishes-item-thmb-2 li:not(:first-child) {
   margin-left: 14px;
