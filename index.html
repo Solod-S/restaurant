@@ -28,16 +28,16 @@
         /></a>
         <ul class="header-nav-list">
           <li class="header-nav-item">
-            <a class="header-nav-link" href="">Главная</a>
+            <a class="header-nav-link" href="#hero">Главная</a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav-link" href="">Меню</a>
+            <a class="header-nav-link" href="#reservation">Бронь</a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav-link" href="">О Нас</a>
+            <a class="header-nav-link" href="#menu">Меню</a>
           </li>
           <li class="header-nav-item">
-            <a class="header-nav-link" href="">Бронь</a>
+            <a class="header-nav-link" href="#dishes-and-cook">О Нас</a>
           </li>
         </ul>
         <div class="header-nav-contact">
@@ -53,7 +53,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <h2 class="hero-uptext">Добро пожаловать в</h2>
           <h1 class="hero-title">Наш ресторан</h1>
@@ -176,7 +176,9 @@
             </div>
           </div>
         </div>
+        <div id="reservation"></div>
       </section>
+      <!---------------------------------------------------------------------------------- RESERVATION----------------------------------------------------------------------------- -->
       <section class="celebration">
         <div class="container">
           <div class="celebration-wrapper">
@@ -230,32 +232,32 @@
       </section>
       <!-- -------------------------------------------------------------------------------- MENU----------------------------------------------------------------------------- -->
     </main>
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="container">
         <h2 class="menu-title">Наше меню</h2>
         <ul class="menu-list">
           <li class="menu-item">
-            <div class="menu-img">
-              <div class="menu-price"><span class="menu-price-money">420</span></div>
+            <div class="menu-img-first">
+              <div class="menu-price"><span class="menu-price-money">120</span></div>
             </div>
-            <h3 class="menu-subtitle">Гамбургер макси</h3>
+            <h3 class="menu-subtitle">Шаурма <span class="color-span">макси</span></h3>
+            <p class="menu-text">Максимально сочная начинка</p>
+            <button class="menu-btn" type="button">Заказать</button>
+          </li>
+          <li class="menu-item">
+            <div class="menu-img-second">
+              <div class="menu-price"><span class="menu-price-money">150</span></div>
+            </div>
+            <h3 class="menu-subtitle">Гамбургер <span class="color-span">макси</span></h3>
             <p class="menu-text">Максимально толстый слой мяса</p>
             <button class="menu-btn" type="button">Заказать</button>
           </li>
           <li class="menu-item">
-            <div class="menu-img">
-              <div class="menu-price"><span class="menu-price-money">420</span></div>
+            <div class="menu-img-thrd">
+              <div class="menu-price"><span class="menu-price-money">300</span></div>
             </div>
-            <h3 class="menu-subtitle">Гамбургер макси</h3>
-            <p class="menu-text">Максимально толстый слой мяса</p>
-            <button class="menu-btn" type="button">Заказать</button>
-          </li>
-          <li class="menu-item">
-            <div class="menu-img">
-              <div class="menu-price"><span class="menu-price-money">420</span></div>
-            </div>
-            <h3 class="menu-subtitle">Гамбургер макси</h3>
-            <p class="menu-text">Максимально толстый слой мяса</p>
+            <h3 class="menu-subtitle">Пицца <span class="color-span">макси</span></h3>
+            <p class="menu-text">Максимально толстый слой сыра</p>
             <button class="menu-btn" type="button">Заказать</button>
           </li>
         </ul>
@@ -281,7 +283,7 @@
       </div>
     </section>
     <!----------------------------------------------------------------------------------DISHES AND COOK----------------------------------------------------------------------------- -->
-    <section class="dishes-and-cook">
+    <section class="dishes-and-cook" id="dishes-and-cook">
       <div class="container">
         <h2 class="dishes-title">Галерея <span class="color-span">Блюд</span></h2>
         <div class="dishes-thmb">

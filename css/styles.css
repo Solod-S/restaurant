@@ -3,7 +3,9 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Tinos', serif; */
 :root {
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
 }
 
@@ -67,18 +69,33 @@ a {
   background-repeat: no-repeat;
 } */
 .header-nav {
-  position: absolute;
+  position: fixed;
+  z-index: 22;
 
-  left: 0;
-  right: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+}
+.header-nav::before {
+  z-index: -1;
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../images/hero-bg.jpg);
+  width: 1920px;
+  height: 84px;
+  background-size: cover;
+  opacity: 0.9;
 }
 .oveflow-bg {
 }
 .container-header {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 6px;
 }
 .header-nav-logo {
 }
@@ -161,7 +178,7 @@ a {
   background-color: #656363;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  max-width: 1920px;
   height: 800px;
   margin: 0 auto;
   padding-top: 205px;
@@ -382,7 +399,7 @@ a {
   padding-top: 80px;
   padding-bottom: 104px;
   content: '';
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
   /* width: 100%;
   height: 100%; */
@@ -520,7 +537,7 @@ a {
 .menu {
   background-image: url(../images/menu-bg.jpg);
   background-color: #656363;
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
   background-size: cover;
   height: 1034px;
@@ -550,7 +567,20 @@ a {
   background-color: #ffffff;
   padding: 80px 63px 29px 62px;
 }
-.menu-img {
+.menu-img-first {
+  position: relative;
+  margin-bottom: 22px;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background-image: url(..//images/shava.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #bc9060;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-img-second {
   position: relative;
   margin-bottom: 22px;
   width: 225px;
@@ -558,6 +588,20 @@ a {
   border-radius: 50%;
   background-image: url(..//images/burger.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #bc9060;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-img-thrd {
+  position: relative;
+  margin-bottom: 22px;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background-image: url(..//images/pizza.jpg);
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: #bc9060;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -631,7 +675,7 @@ a {
 
 .feedback {
   background-color: #e5e5e5;
-  max-width: 1440px;
+  max-width: 1920px;
   min-height: 550px;
   padding: 150px 0;
   margin: 0 auto;
@@ -804,7 +848,7 @@ a {
 footer {
   background-image: url(../images/footer.jpg);
   background-color: #656363;
-  max-width: 1440px;
+  max-width: 1920px;
   height: 732px;
   margin: 0 auto;
   background-size: cover;
