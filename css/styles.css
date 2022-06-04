@@ -622,15 +622,28 @@ a {
 }
 
 .menu-price-money {
+  position: absolute;
+  top: 19%;
+  left: 17%;
   font-family: 'Cookie', cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 42px;
   line-height: 33px;
 
   color: #ffffff;
 }
-
+.menu-price-cash {
+  position: absolute;
+  top: 49%;
+  left: 53%;
+  font-family: 'Cookie', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 33px;
+  color: #ffffff;
+}
 /* .menu-img::before {
   position: relative;
   display: block;
