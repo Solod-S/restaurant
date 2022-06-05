@@ -16,10 +16,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
   </head>
   <body>
     <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
@@ -33,9 +29,6 @@
         <ul class="header-nav-list">
           <li class="header-nav-item">
             <a class="header-nav-link" href="#hero">Главная</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#reservation">Бронь</a>
           </li>
           <li class="header-nav-item">
             <a class="header-nav-link" href="#menu">Меню</a>
@@ -56,7 +49,7 @@
           >
           <p class="header-nav-text">Свяжитесь с нами для бронирования</p>
         </div>
-        <button class="header-nav-btn" type="button">Заказ столика</button>
+        <a href="#reservation" class="header-nav-btn">Заказ столика</a>
       </div>
     </header>
     <main>
@@ -192,10 +185,10 @@
         <div class="container">
           <div class="celebration-wrapper">
             <h2 class="celebration-title">Отпразднуйте в одном из самых лучших ресторанов.</h2>
-            <p class="celebration-text">Только в этом месяце бизнес-ланч от 250 ₽</p>
+            <p class="celebration-text">Только в этом месяце бизнес-ланч от 250 грн</p>
           </div>
           <div class="celebration-wrapper-scnd">
-            <button class="celebration-btn" type="button">Заказ столика</button>
+            <button class="celebration-btn" data-modal-open>Забронировать</button>
           </div>
         </div>
       </section>
@@ -385,6 +378,7 @@
         </ul>
       </div>
     </section>
+    <!----------------------------------------------------------------------------------CONTACTS----------------------------------------------------------------------------- -->
     <footer id="footer">
       <div class="container">
         <div class="online">
@@ -471,5 +465,39 @@
         </div>
       </div>
     </footer>
+    <!----------------------------------------------------------------------------------Modal----------------------------------------------------------------------------- -->
+    <div class="bacdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-close-btn" data-modal-close>
+          <svg class="modal-icon" width="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Оставьте свои данные, наш менеджер свяжеться с Вами.</h2>
+        <form class="modal-form">
+          <div class="modal-form-item">
+            <label class="modal-form-label" for="name">Имя</label>
+            <input class="modal-form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="modal-form-item">
+            <label class="modal-form-label" for="tel">Телефон</label>
+            <input class="modal-form-input" type="tel" name="tel" id="tel" />
+          </div>
+          <div class="modal-textarea">
+            <label class="modal-textarea-label" for="textarea"></label>
+            <textarea
+              class="modal-textarea-input"
+              name="textarea"
+              id="textarea"
+              cols="5"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <button class="modal-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
