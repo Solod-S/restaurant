@@ -533,7 +533,7 @@ a {
 .our-dish-item:not(:last-child) {
   margin-bottom: 134px;
 }
-.our-dish-text {
+.our-dish-meta {
   order: 1;
   font-family: 'Tinos', serif;
   font-style: normal;
@@ -543,7 +543,7 @@ a {
 
   color: #000000;
 }
-.our-dish-text-second {
+.our-dish-price {
   order: 3;
   font-family: 'Tinos', serif;
   font-style: normal;
@@ -684,7 +684,7 @@ a {
   background-repeat: no-repeat;
   height: 100px;
 } */
-.menu-subtitle {
+.menu-meta {
   margin-bottom: 17px;
   font-family: 'Tinos', serif;
   font-weight: 400;
@@ -694,7 +694,7 @@ a {
 
   color: #000000;
 }
-.menu-text {
+.menu-dscr {
   margin-bottom: 20px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
