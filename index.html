@@ -16,6 +16,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
@@ -69,7 +71,7 @@
       <section class="history">
         <div class="container">
           <ul class="history-list">
-            <li class="history-item">
+            <li class="history-item" data-aos="fade-up-right" data-aos-duration="800">
               <div class="history-thmb">
                 <svg class="history-svg" width="87px" height="87px">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
@@ -82,7 +84,7 @@
                 </p>
               </div>
             </li>
-            <li class="history-item">
+            <li class="history-item" data-aos="fade-up" data-aos-duration="800">
               <div class="history-thmb">
                 <svg class="history-svg" width="87px" height="87px">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
@@ -96,7 +98,7 @@
                 </p>
               </div>
             </li>
-            <li class="history-item">
+            <li class="history-item" data-aos="fade-up-left" data-aos-duration="800">
               <div class="history-thmb">
                 <svg class="history-svg" width="87px" height="87px">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
@@ -243,7 +245,8 @@
       <div class="container">
         <h2 class="menu-title">Наше меню</h2>
         <ul class="menu-list">
-          <li class="menu-item">
+          <li class="menu-item" data-aos="fade-down"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="800">
             <div class="menu-img-first">
               <div class="menu-price">
                 <span class="menu-price-money">120</span><span class="menu-price-cash">грн</span>
@@ -253,7 +256,8 @@
             <p class="menu-dscr">Максимально сочная начинка</p>
             <button class="menu-btn" type="button">Заказать</button>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-aos="fade-down"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="800">
             <div class="menu-img-second">
               <div class="menu-price">
                 <span class="menu-price-money">150</span><span class="menu-price-cash">грн</span>
@@ -263,7 +267,8 @@
             <p class="menu-dscr">Максимально толстый слой мяса</p>
             <button class="menu-btn" type="button">Заказать</button>
           </li>
-          <li class="menu-item">
+          <li class="menu-item" data-aos="fade-down"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="800">
             <div class="menu-img-thrd">
               <div class="menu-price">
                 <span class="menu-price-money">300</span><span class="menu-price-cash">грн</span>
@@ -403,28 +408,28 @@
         <div class="contact">
           <h2 class="contact-title">Контакты</h2>
           <ul class="contact-social-list">
-            <li class="contact-social-item">
+            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
                 <svg class="contact-social-icon" width="16px" height="16px">
                   <use href="./images/symbol-defs.svg#icon-facebook2-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="contact-social-item">
+            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
                 <svg class="contact-social-icon" width="16px" height="16px">
                   <use href="./images/symbol-defs.svg#icon-instagram-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="contact-social-item">
+            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
                 <svg class="contact-social-icon" width="16px" height="16px">
                   <use href="./images/symbol-defs.svg#icon-telegram-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="contact-social-item">
+            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
                 <svg class="contact-social-icon" width="16px" height="16px">
                   <use href="./images/symbol-defs.svg#icon-twitter-footer"></use>
@@ -499,5 +504,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
