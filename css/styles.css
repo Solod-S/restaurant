@@ -1093,6 +1093,7 @@ footer .container {
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.9);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .bacdrop {
