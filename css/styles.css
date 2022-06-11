@@ -283,8 +283,8 @@ a {
 }
 
 /* <!-- -------------------------------------------------------------------------------- HISTORY ----------------------------------------------------------------------------- --> */
-
 .history {
+  padding-top: 240px;
   padding-bottom: 182px;
   position: relative;
 }
@@ -292,15 +292,16 @@ a {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: -107px;
-  display: flex;
-  position: relative;
+  top: -160px;
 }
 
 .history-item {
   background-color: #fff;
   background: #ffffff;
   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+}
+.history-item:not(:last-child) {
+  margin-right: 30px;
 }
 .history-thmb {
   display: flex;
