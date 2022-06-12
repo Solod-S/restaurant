@@ -482,25 +482,25 @@
     <!----------------------------------------------------------------------------------Modal----------------------------------------------------------------------------- -->
     <div class="bacdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="modal-close-btn" data-modal-close>
-          <svg class="modal-icon" width="11" height="11">
+        <button class="modal-window__close-btn" data-modal-close>
+          <svg class="modal-window__close-btn-icon" width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Оставьте свои данные, наш менеджер свяжеться с Вами.</h2>
-        <form class="modal-form">
-          <div class="modal-form-item">
-            <label class="modal-form-label" for="name">Имя</label>
-            <input class="modal-form-input" type="text" name="name" id="name" />
+        <h2 class="modal-window__title">Оставьте свои данные, наш менеджер свяжеться с Вами.</h2>
+        <form class="modal-window__form">
+          <div class="modal-window__item">
+            <label class="modal-window__label" for="name">Имя</label>
+            <input class="modal-window__input" type="text" name="name" id="name" />
           </div>
-          <div class="modal-form-item">
-            <label class="modal-form-label" for="tel">Телефон</label>
-            <input class="modal-form-input" type="tel" name="tel" id="tel" />
+          <div class="modal-window__item">
+            <label class="modal-window__label" for="tel">Телефон</label>
+            <input class="modal-window__input" type="tel" name="tel" id="tel" />
           </div>
-          <div class="modal-textarea">
-            <label class="modal-textarea-label" for="textarea"></label>
+          <div class="modal-window__textarea modal-textarea">
+            <label class="modal-window__textarea-label" for="textarea"></label>
             <textarea
-              class="modal-textarea-input"
+              class="modal-window__textarea-input"
               name="textarea"
               id="textarea"
               cols="5"
@@ -508,7 +508,7 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <button class="modal-btn" type="submit">Отправить</button>
+          <button class="modal-window__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
