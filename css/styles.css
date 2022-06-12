@@ -808,80 +808,54 @@ a {
   line-height: calc(52px);
 
   color: #000000;
+  position: relative;
 }
-.color-span {
-}
+
 .dishes-thmb {
   margin-bottom: 100px;
   display: flex;
 }
+.dishes-list-1:not(:last-child) {
+  margin-right: 14px;
+}
 .dishes-list-1 {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 10px;
+  width: calc(100% - 14px / 2);
+  margin-top: -14px;
+  margin-right: -14px;
 }
-.dishes-list-1::before {
+.dishes-title::before {
   position: absolute;
   display: block;
   top: 0;
   left: 0;
-  transform: translatex(-616%);
+  transform: translate(-616%, 112%);
   content: '';
   width: 30px;
   height: 100px;
 
   background-color: #ff0000;
 }
-.dishes-item-thmb-1 {
-  display: flex;
-}
-.dishes-item-thmb-1 li:not(:first-child) {
-  margin-left: 14px;
-}
+.dishes-title::after {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  transform: translate(616%, 112%);
+  content: '';
+  width: 30px;
+  height: 100px;
 
-.large {
-  margin-bottom: 15px;
+  background-color: #ff0000;
 }
 .dishes-item-1 {
+  margin-right: 14px;
+  margin-top: 14px;
 }
-.dishes-img-1 {
-}
-.dishes-list-2 {
-  position: relative;
-  width: 578px;
-}
-.dishes-list-2::before {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  transform: translatex(2317%);
-  content: '';
-  width: 30px;
-  height: 100px;
 
-  background-color: #ff0000;
-}
-.dishes-item-thmb-2 {
-  display: flex;
-  margin-bottom: 15px;
-}
-.dishes-item-thmb-2 li:not(:first-child) {
-  margin-left: 14px;
-}
-.dishes-item-2 {
-}
-.dishes-img-2 {
-}
-.cook-title {
-  margin-bottom: 100px;
-  font-family: 'Tinos', serif;
-  font-weight: 400;
-  text-align: center;
-  font-size: 54px;
-  line-height: calc(52px);
-
-  color: #000000;
-}
 .cook-list {
   display: flex;
 }
