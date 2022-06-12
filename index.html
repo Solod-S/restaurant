@@ -16,17 +16,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
 
     <header class="header">
-      <div class="header__wrapper container">
-        <a class="logo" href="">
-          <img src="./images/logo.svg" alt="logo" width="68px"
-        /></a>
+      <nav class="header__wrapper container">
+        <a class="logo" href=""><img src="./images/logo.svg" alt="logo" width="68" /></a>
         <ul class="navigation-panel">
           <li class="navigation-panel__item">
             <a class="navigation-panel__link" href="#hero">Главная</a>
@@ -43,77 +40,75 @@
         </ul>
         <div class="contacts-panel">
           <div class="contacts-panel__wrapper">
-          <a class="contacts-panel__item-tell" href="tel:+9998887654">
-            <svg class="contacts-panel__tell-icon" width="23px" height="23px">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
-            </svg>
-            +999-888-76-54</a
-          >
-          <p class="contacts-panel__item-text">Свяжитесь с нами для бронирования</p>
+            <a class="contacts-panel__item-tell" href="tel:+9998887654">
+              <svg class="contacts-panel__tell-icon" width="23" height="23">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +999-888-76-54</a
+            >
+            <p class="contacts-panel__item-text">Свяжитесь с нами для бронирования</p>
           </div>
-          <a class="header__btn header-nav-btn" href="#reservation" >Заказ столика</a>
+          <a class="header__btn header-nav-btn" href="#reservation">Заказ столика</a>
         </div>
-      </div>
       </nav>
     </header>
+    <!---------------------------------------------------------------------------------- HERO ------------------------------------------------------------------------------->
     <main>
       <section class="hero" id="hero">
         <div class="container">
-          <h2 class="hero-uptext">Добро пожаловать в</h2>
-          <h1 class="hero-title">Наш ресторан</h1>
-          <div class="hero-text-overflow">
-            <p class="hero-text">Дом лучшей еды</p>
+          <h2 class="hero__greating">Добро пожаловать в</h2>
+          <h1 class="hero__title">Наш ресторан</h1>
+          <div class="hero__text-wrapper">
+            <p class="hero__text">Дом лучшей еды</p>
           </div>
-          <a class="hero-btn" href="#menu">
+          <a class="hero__btn" href="#menu">
             <span lang="en">view menu</span>
           </a>
         </div>
       </section>
-      <!---------------------------------------------------------------------------------- HISTORY ----------------------------------------------------------------------------- -->
+      <!---------------------------------------------------------------------------------- HISTORY ------------------------------------------------------------------------------->
       <section class="history">
         <div class="container">
-          <ul class="history-list">
-            <li class="history-item" data-aos="fade-up-right" data-aos-duration="800">
-              <div class="history-thmb">
-                <svg class="history-svg" width="87px" height="87px">
+          <ul class="features">
+            <li class="features__item" data-aos="fade-up-right" data-aos-duration="800">
+              <div class="features__wrapper">
+                <svg class="features__icon" width="87" height="87">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
                 </svg>
-                <h3 class="history-list-title">
+                <h3 class="features__title">
                   Магическая <span class="color-span">Атмосфера</span>
                 </h3>
-                <p class="history-list-text">
+                <p class="features__text">
                   В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
                 </p>
               </div>
             </li>
-            <li class="history-item" data-aos="fade-up" data-aos-duration="800">
-              <div class="history-thmb">
-                <svg class="history-svg" width="87px" height="87px">
+            <li class="features__item" data-aos="fade-up" data-aos-duration="800">
+              <div class="features__wrapper">
+                <svg class="features__icon" width="87" height="87">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
                 </svg>
-                <h3 class="history-list-title">
-                  Лучшее качество <span class="color-span">Еды</span>
-                </h3>
-                <p class="history-list-text">
+                <h3 class="features__title">Лучшее качество <span class="color-span">Еды</span></h3>
+                <p class="features__text">
                   Качество нашей <br />
                   Еды - отменное!
                 </p>
               </div>
             </li>
-            <li class="history-item" data-aos="fade-up-left" data-aos-duration="800">
-              <div class="history-thmb">
-                <svg class="history-svg" width="87px" height="87px">
+            <li class="features__item" data-aos="fade-up-left" data-aos-duration="800">
+              <div class="features__wrapper">
+                <svg class="features__icon" width="87" height="87">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
                 </svg>
-                <h3 class="history-list-title">Недорогая <span class="color-span">Еда</span></h3>
-                <p class="history-list-text">
+                <h3 class="features__title">Недорогая <span class="color-span">Еда</span></h3>
+                <p class="features__text">
                   Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!
                 </p>
               </div>
             </li>
           </ul>
 
-          <div class="history-block-second">
+          <article class="history-block-second">
             <div class="history-block-wrapped">
               <h2 class="history-block-title">Наша <span class="color-span">История</span></h2>
               <p class="history-block-text">
@@ -147,8 +142,8 @@
                     class="history-block-img-zero"
                     src="./images/history-0.jpg"
                     alt="декорации"
-                    width="212px"
-                    height="164px"
+                    width="212"
+                    height="164"
                   />
                 </li>
                 <li>
@@ -156,8 +151,8 @@
                     class="history-block-img-first"
                     src="./images/history-1.jpg"
                     alt="декорации"
-                    width="255px"
-                    height="430x"
+                    width="255"
+                    height="430"
                   />
                 </li>
                 <li>
@@ -165,8 +160,8 @@
                     class="history-block-img-second"
                     src="./images/history-2.jpg"
                     alt="декорации"
-                    width="233px"
-                    height="300x"
+                    width="233"
+                    height="300"
                   />
                 </li>
                 <li>
@@ -174,13 +169,13 @@
                     class="history-block-img-thrd"
                     src="./images/history-3.jpg"
                     alt="декорации"
-                    width="254px"
-                    height="300x"
+                    width="254"
+                    height="300"
                   />
                 </li>
               </ul>
             </div>
-          </div>
+          </article>
         </div>
         <div id="reservation"></div>
       </section>
@@ -201,26 +196,21 @@
         <div class="container">
           <h2 class="our-dish-title">Наши <span class="color-span">Блюда</span></h2>
           <div class="our-wrapper">
-            <img
-              class="our-dish-img-main"
-              src="./images/our-dish-1.jpg"
-              alt="блюдо"
-              height="470px"
-            />
+            <img class="our-dish-img-main" src="./images/our-dish-1.jpg" alt="блюдо" height="470" />
             <ul class="our-dish-list-img">
               <li class="our-dish-img-item">
-                <img class="our-dish-img" src="./images/our-dish-2.jpg" alt="блюдо" width="160px" />
+                <img class="our-dish-img" src="./images/our-dish-2.jpg" alt="блюдо" width="160" />
               </li>
               <li class="our-dish-img-item">
                 <img
                   class="our-dish-img"
                   src="./images/pivnaya_tarelka.jpg"
                   alt="блюдо"
-                  width="160px"
+                  width="160"
                 />
               </li>
               <li class="our-dish-img-item">
-                <img class="our-dish-img" src="./images/stake.jpg" alt="блюдо" width="160px" />
+                <img class="our-dish-img" src="./images/stake.jpg" alt="блюдо" width="160" />
               </li>
             </ul>
 
@@ -247,8 +237,12 @@
       <div class="container">
         <h2 class="menu-title">Наше меню</h2>
         <ul class="menu-list">
-          <li class="menu-item" data-aos="fade-down"
-     data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+          <li
+            class="menu-item"
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="800"
+          >
             <div class="menu-img-first">
               <div class="menu-price">
                 <span class="menu-price-money">120</span><span class="menu-price-cash">грн</span>
@@ -258,8 +252,12 @@
             <p class="menu-dscr">Максимально сочная начинка</p>
             <button class="menu-btn" type="button">Заказать</button>
           </li>
-          <li class="menu-item" data-aos="fade-down"
-     data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+          <li
+            class="menu-item"
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="800"
+          >
             <div class="menu-img-second">
               <div class="menu-price">
                 <span class="menu-price-money">150</span><span class="menu-price-cash">грн</span>
@@ -269,8 +267,12 @@
             <p class="menu-dscr">Максимально толстый слой мяса</p>
             <button class="menu-btn" type="button">Заказать</button>
           </li>
-          <li class="menu-item" data-aos="fade-down"
-     data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+          <li
+            class="menu-item"
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="800"
+          >
             <div class="menu-img-thrd">
               <div class="menu-price">
                 <span class="menu-price-money">300</span><span class="menu-price-cash">грн</span>
@@ -313,8 +315,8 @@
                 class="dishes-img-1"
                 src="./images/dish-img1.jpg"
                 alt="блюдо"
-                width="520px"
-                height="270px"
+                width="520"
+                height="270"
               />
             </li>
             <div class="dishes-item-thmb-1">
@@ -323,8 +325,8 @@
                   class="dishes-img-1"
                   src="./images/dish-img2.jpg"
                   alt="блюдо"
-                  width="253px"
-                  height="270px"
+                  width="253"
+                  height="270"
                 />
               </li>
               <li class="dishes-item-1">
@@ -332,8 +334,8 @@
                   class="dishes-img-1"
                   src="./images/dish-img3.jpg"
                   alt="блюдо"
-                  width="253px"
-                  height="270px"
+                  width="253"
+                  height="270"
                 />
               </li>
             </div>
@@ -346,8 +348,8 @@
                   class="dishes-img-2"
                   src="./images/dish-img3.jpg"
                   alt="блюдо"
-                  width="253px"
-                  height="270px"
+                  width="253"
+                  height="270"
                 />
               </li>
               <li class="dishes-item-2">
@@ -355,8 +357,8 @@
                   class="dishes-img-2"
                   src="./images/dish-img2.jpg"
                   alt="блюдо"
-                  width="253px"
-                  height="270px"
+                  width="253"
+                  height="270"
                 />
               </li>
             </div>
@@ -365,8 +367,8 @@
                 class="dishes-img-2"
                 src="./images/dish-img1.jpg"
                 alt="блюдо"
-                width="520px"
-                height="270px"
+                width="520"
+                height="270"
               />
             </li>
           </ul>
@@ -374,13 +376,13 @@
         <h2 class="cook-title">Наши <span class="color-span">Повара</span></h2>
         <ul class="cook-list">
           <li class="cook-item">
-            <img class="cook-img" src="./images/cook-1.jpg" alt="повар" width="348px" />
+            <img class="cook-img" src="./images/cook-1.jpg" alt="повар" width="348" />
           </li>
           <li class="cook-item">
-            <img class="cook-img" src="./images/cook-2.jpg" alt="повар" width="348px" />
+            <img class="cook-img" src="./images/cook-2.jpg" alt="повар" width="348" />
           </li>
           <li class="cook-item">
-            <img class="cook-img" src="./images/cook-3.jpg" alt="повар" width="348px" />
+            <img class="cook-img" src="./images/cook-3.jpg" alt="повар" width="348" />
           </li>
         </ul>
       </div>
@@ -412,28 +414,28 @@
           <ul class="contact-social-list">
             <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16px" height="16px">
+                <svg class="contact-social-icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-facebook2-footer"></use>
                 </svg>
               </a>
             </li>
             <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16px" height="16px">
+                <svg class="contact-social-icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-instagram-footer"></use>
                 </svg>
               </a>
             </li>
             <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16px" height="16px">
+                <svg class="contact-social-icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-telegram-footer"></use>
                 </svg>
               </a>
             </li>
             <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
               <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16px" height="16px">
+                <svg class="contact-social-icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-twitter-footer"></use>
                 </svg>
               </a>
@@ -443,7 +445,7 @@
             <ul class="contact-list">
               <li class="contact-item">
                 <a class="contact-link" href=""
-                  ><svg class="contact-icon" width="16px" height="16px">
+                  ><svg class="contact-icon" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-location-footer"></use>
                   </svg>
                   ул. Васильковая, 7А Киев, 08132</a
@@ -451,7 +453,7 @@
               </li>
               <li class="contact-item">
                 <a class="contact-link" href=""
-                  ><svg class="contact-icon" width="16px" height="16px">
+                  ><svg class="contact-icon" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-phone-footer"></use>
                   </svg>
                   +999-888-76-54</a
@@ -459,14 +461,14 @@
               </li>
               <li class="contact-item">
                 <a class="contact-link" href=""
-                  ><svg class="contact-icon" width="16px" height="16px">
+                  ><svg class="contact-icon" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-envelop-footer"></use>
                   </svg>
                   cafe@email.com</a
                 >
               </li>
             </ul>
-            <h2 class="contact-uptext">График работы</h2>
+            <p class="contact-uptext">График работы</p>
             <p class="contact-downtext">Ежедневно с 9:00 до 7:00</p>
           </address>
         </div>
@@ -476,7 +478,7 @@
     <div class="bacdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="modal-close-btn" data-modal-close>
-          <svg class="modal-icon" width="11px" height="11px">
+          <svg class="modal-icon" width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
@@ -508,7 +510,7 @@
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init();
+    </script>
   </body>
 </html>

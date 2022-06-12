@@ -189,8 +189,7 @@ a {
 }
 
 /* <!-- -------------------------------------------------------------------------------- HERO ----------------------------------------------------------------------------- --> */
-.header-hero {
-}
+
 .hero {
   background-image: url(../images/hero-bg.jpg);
   background-color: #656363;
@@ -202,7 +201,7 @@ a {
   padding-top: 205px;
   padding-bottom: 231px;
 }
-.hero-uptext {
+.hero__greating {
   margin-left: 33px;
   font-family: 'Tinos', serif;
   font-weight: 400;
@@ -213,7 +212,7 @@ a {
   animation-duration: 1s;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 12px;
   font-family: 'Tinos', serif;
   font-weight: 400;
@@ -223,11 +222,11 @@ a {
   color: #d67e35;
   animation-duration: 1s;
 }
-.hero-text-overflow {
+.hero__text-wrapper {
   position: relative;
   width: 100%;
 }
-.hero-text::before {
+.hero__text::before {
   position: absolute;
   top: 50%;
   left: 104px;
@@ -238,7 +237,7 @@ a {
   background: #c4c4c4;
 }
 
-.hero-text::after {
+.hero__text::after {
   position: absolute;
   top: 50%;
   left: 350px;
@@ -249,7 +248,7 @@ a {
   background: #c4c4c4;
 }
 
-.hero-text {
+.hero__text {
   margin-left: 174px;
   margin-bottom: 21px;
   font-family: 'Open Sans', sans-serif;
@@ -259,7 +258,7 @@ a {
 
   color: #ffffff;
 }
-.hero-btn {
+.hero__btn {
   display: inline-block;
   margin-left: 190px;
   padding: 14px 28px;
@@ -280,8 +279,8 @@ a {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   color: #ff7400;
   background-color: #ffffff;
   transform: scale(1.1);
@@ -293,22 +292,22 @@ a {
   padding-bottom: 182px;
   position: relative;
 }
-.history-list {
+.features {
   position: absolute;
   display: flex;
   justify-content: space-between;
   top: -20%;
 }
 
-.history-item {
+.features__item {
   background-color: #fff;
   background: #ffffff;
   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
 }
-.history-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
-.history-thmb {
+.features__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,11 +315,11 @@ a {
   width: 328px;
 }
 
-.history-svg {
+.features__icon {
   fill: #bc9060;
   padding-bottom: 4px;
 }
-.history-list-title {
+.features__title {
   padding-bottom: 20px;
   font-family: 'Tinos', serif;
   font-weight: 400;
@@ -331,7 +330,7 @@ a {
   color: #2c2c2c;
 }
 
-.history-list-text {
+.features__text {
   font-family: 'Tinos', serif;
   font-weight: 400;
   font-size: 26px;
