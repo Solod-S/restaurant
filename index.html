@@ -22,35 +22,38 @@
   <body>
     <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
 
-    <header class="header-nav">
-      <div class="container container-header">
-        <a class="header-nav-logo" href="">
+    <header class="header">
+      <div class="header__wrapper container">
+        <a class="logo" href="">
           <img src="./images/logo.svg" alt="logo" width="68px"
         /></a>
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#hero">Главная</a>
+        <ul class="navigation-panel">
+          <li class="navigation-panel__item">
+            <a class="navigation-panel__link" href="#hero">Главная</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#menu">Меню</a>
+          <li class="navigation-panel__item">
+            <a class="navigation-panel__link" href="#menu">Меню</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#dishes-and-cook">О Нас</a>
+          <li class="navigation-panel__item">
+            <a class="navigation-panel__link" href="#dishes-and-cook">О Нас</a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#footer">Контаты</a>
+          <li class="navigation-panel__item">
+            <a class="navigation-panel__link" href="#footer">Контаты</a>
           </li>
         </ul>
-        <div class="header-nav-contact">
-          <a class="header-nav-tell" href="tel:+9998887654">
-            <svg class="header-nav-icon" width="23px" height="23px">
+        <div class="contacts-panel">
+          <div class="contacts-panel__wrapper">
+          <a class="contacts-panel__item-tell" href="tel:+9998887654">
+            <svg class="contacts-panel__tell-icon" width="23px" height="23px">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
             +999-888-76-54</a
           >
-          <p class="header-nav-text">Свяжитесь с нами для бронирования</p>
+          <p class="contacts-panel__item-text">Свяжитесь с нами для бронирования</p>
+          </div>
+          <a class="header__btn header-nav-btn" href="#reservation" >Заказ столика</a>
         </div>
-        <a href="#reservation" class="header-nav-btn">Заказ столика</a>
+      </div>
       </nav>
     </header>
     <main>
