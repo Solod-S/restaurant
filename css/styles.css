@@ -975,6 +975,10 @@ footer .container {
 
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
+.--textarea-modificator {
+  display: block;
+  margin-bottom: 10px;
+}
 .online-btn {
   padding: 14px 18px;
   font-family: 'Open Sans';
