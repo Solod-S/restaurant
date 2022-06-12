@@ -53,7 +53,7 @@ a {
 }
 
 .container {
-  width: 1100px;
+  width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -297,6 +297,8 @@ a {
   display: flex;
   justify-content: space-between;
   top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .features__item {
@@ -600,6 +602,7 @@ a {
 }
 .menu-list {
   display: flex;
+  justify-content: space-evenly;
 }
 .menu-item:not(:last-child) {
   margin-right: 30px;
@@ -843,18 +846,19 @@ a {
 .dishes-thmb {
   margin-bottom: 100px;
   display: flex;
+  justify-content: center;
 }
-.dishes-list-1:not(:last-child) {
-  margin-right: 14px;
-}
+
 .dishes-list-1 {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 42%;
   margin-right: 10px;
-  width: calc(100% - 14px / 2);
-  margin-top: -14px;
-  margin-right: -14px;
+}
+
+.dishes-list-1--margin-modificator {
+  margin-right: 10%;
 }
 
 .dishes-item-1 {
@@ -874,6 +878,7 @@ a {
 }
 .cook-list {
   display: flex;
+  justify-content: center;
 }
 .cook-item {
 }
