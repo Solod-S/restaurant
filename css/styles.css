@@ -297,6 +297,9 @@ a {
   padding-bottom: 182px;
   position: relative;
 }
+.features--modificator-container {
+  width: 1200px;
+}
 .features {
   position: absolute;
   display: flex;
