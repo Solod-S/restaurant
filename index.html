@@ -288,21 +288,26 @@
       </div>
     </section>
     <!---------------------------------------------------------------------------------- FEEDBACK----------------------------------------------------------------------------- -->
-    <section class="feedback" id="dishes-and-cook">
+    <section class="clients-feedback" id="dishes-and-cook">
       <div class="container">
-        <p class="feedback__text">
+        <p class="clients-feedback__text">
           Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
           Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать
           этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в
           Санкт-Петербург!!!
         </p>
-        <img class="feedback__img" src="./images/feedback-img.jpg" width="150" alt="мужчина" />
-        <h2 class="feedback__title">Посетитель</h2>
-        <p class="feedback__name">Николай</p>
-        <div class="feedback__selectors-wrapper">
-          <span class="feedback__selector"></span>
-          <span class="feedback__selector"></span>
-          <span class="feedback__selector is-selected"></span>
+        <img
+          class="clients-feedback__img"
+          src="./images/feedback-img.jpg"
+          width="150"
+          alt="мужчина"
+        />
+        <h2 class="clients-feedback__title">Посетитель</h2>
+        <p class="clients-feedback__name">Николай</p>
+        <div class="clients-feedback__selectors-wrapper">
+          <span class="clients-feedback__selector"></span>
+          <span class="clients-feedback__selector"></span>
+          <span class="clients-feedback__selector is-selected"></span>
         </div>
       </div>
     </section>
@@ -390,84 +395,86 @@
     <!----------------------------------------------------------------------------------FOTER/CONTACTS----------------------------------------------------------------------------- -->
     <footer id="footer">
       <div class="container">
-        <div class="online">
-          <h2 class="online-title">Отправить отзыв</h2>
-          <form class="online-form">
-            <div class="online-thmb">
-              <label class="online-item">
-                <input class="online-input" type="text" name="name" placeholder="Имя*" />
+        <div class="feedback">
+          <h2 class="feedback__title">Отправить отзыв</h2>
+          <form class="feedback-form">
+            <div class="feedback-form__wrapper">
+              <label class="feedback-form__item">
+                <input class="feedback-form__input" type="text" name="name" placeholder="Имя*" />
               </label>
-              <label class="online-item">
-                <input class="online-input" type="tel" name="tel" placeholder="Телефон*" />
+              <label class="feedback-form__item">
+                <input class="feedback-form__input" type="tel" name="tel" placeholder="Телефон*" />
               </label>
             </div>
-            <label class="online-item --textarea-modificator">
-              <textarea class="online-textarea" name="feedback" rows="5"></textarea>
+            <label class="feedback-form__item feedback-form__item--textarea-modificator">
+              <textarea class="feedback-form__textarea" name="feedback" rows="5"></textarea>
             </label>
-            <button class="online-btn" type="submit">Отправить</button>
+            <button class="feedback-form__btn" type="submit">Отправить</button>
           </form>
         </div>
-        <div class="contact">
-          <h2 class="contact-title">Контакты</h2>
-          <ul class="contact-social-list">
-            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
-              <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16" height="16">
+        <div class="our-contacts">
+          <h2 class="our-contacts__title">Контакты</h2>
+          <ul class="social-set">
+            <li class="social-set__item" data-aos="flip-left" data-aos-duration="800">
+              <a class="social-set__link" href="">
+                <svg class="social-set__icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-facebook2-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
-              <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16" height="16">
+            <li class="social-set__item" data-aos="flip-left" data-aos-duration="800">
+              <a class="social-set__link" href="">
+                <svg class="social-set__icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-instagram-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
-              <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16" height="16">
+            <li class="social-set__item" data-aos="flip-left" data-aos-duration="800">
+              <a class="social-set__link" href="">
+                <svg class="social-set__icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-telegram-footer"></use>
                 </svg>
               </a>
             </li>
-            <li class="contact-social-item" data-aos="flip-left" data-aos-duration="800">
-              <a class="contact-social-link" href="">
-                <svg class="contact-social-icon" width="16" height="16">
+            <li class="social-set__item" data-aos="flip-left" data-aos-duration="800">
+              <a class="social-set__link" href="">
+                <svg class="social-set__icon" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-twitter-footer"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <address class="contact-adress">
-            <ul class="contact-list">
-              <li class="contact-item">
-                <a class="contact-link" href=""
-                  ><svg class="contact-icon" width="16" height="16">
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a class="address__link" href=""
+                  ><svg class="address__icon" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-location-footer"></use>
                   </svg>
                   ул. Васильковая, 7А Киев, 08132</a
                 >
               </li>
-              <li class="contact-item">
-                <a class="contact-link" href=""
-                  ><svg class="contact-icon" width="16" height="16">
+              <li class="address__item">
+                <a class="address__link" href=""
+                  ><svg class="address__icon" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-phone-footer"></use>
                   </svg>
                   +999-888-76-54</a
                 >
               </li>
-              <li class="contact-item">
-                <a class="contact-link" href=""
-                  ><svg class="contact-icon" width="16" height="16">
+              <li class="address__item">
+                <a class="address__link" href=""
+                  ><svg class="address__icon" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-envelop-footer"></use>
                   </svg>
                   cafe@email.com</a
                 >
               </li>
             </ul>
-            <p class="contact-uptext">График работы</p>
-            <p class="contact-downtext">Ежедневно с 9:00 до 7:00</p>
+            <div class="schedule">
+              <p class="schedule__title">График работы</p>
+              <p class="schedule__working-time">Ежедневно с 9:00 до 7:00</p>
+            </div>
           </address>
         </div>
       </div>
