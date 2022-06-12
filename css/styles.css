@@ -427,8 +427,8 @@ a {
   box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* <!-- -------------------------------------------------------------------------------- CELEBRATION ----------------------------------------------------------------------------- --> */
-.celebration {
+/* <!-- -------------------------------------------------------------------------------- RESERVATION ----------------------------------------------------------------------------- --> */
+.reservation {
   padding-top: 80px;
   padding-bottom: 104px;
   content: '';
@@ -442,15 +442,15 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.celebration .container {
+.reservation .container {
   display: flex;
   justify-content: space-between;
 }
 
-.celebration-wrapper {
+.reservation__dscr {
   width: 601px;
 }
-.celebration-title {
+.reservation__title {
   padding-bottom: 20px;
   font-family: 'Tinos', serif;
   font-weight: 400;
@@ -460,7 +460,7 @@ a {
   color: #d67e34;
   animation-duration: 1s;
 }
-.celebration-text {
+.reservation__text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -469,11 +469,11 @@ a {
   color: #ffffff;
   animation-duration: 1s;
 }
-.celebration-wrapper-scnd {
+.reservation__btn-wrapper {
   display: flex;
   align-items: center;
 }
-.celebration-btn {
+.reservation__btn {
   margin-right: 20px;
   padding: 14px 19px;
   font-family: 'Open Sans', sans-serif;
