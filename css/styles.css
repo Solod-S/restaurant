@@ -63,18 +63,7 @@ a {
   color: #bc9060;
 }
 /* <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- --> */
-/* .oveflow-bg {
-  background-image: url(../images/hero-bg.jpg);
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 800px;
-  width: 100%;
 
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 .header-nav {
   position: fixed;
   z-index: 22;
