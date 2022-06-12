@@ -203,30 +203,30 @@
               height="470"
             />
             <ul class="our-dish__list">
-              <li class="our-dish-img-item">
-                <img class="our-dish-img" src="./images/our-dish-2.jpg" alt="блюдо" width="160" />
-                <div class="our-dish-vrem">
-                  <p class="our-dish-meta">Гамбургер мини</p>
-                  <p class="our-dish-price">100 грн</p>
+              <li class="our-dish__item">
+                <img class="our-dish__img" src="./images/our-dish-2.jpg" alt="блюдо" width="160" />
+                <div class="our-dish__dscr">
+                  <p class="our-dish__dish">Гамбургер мини</p>
+                  <p class="our-dish__price">100 грн</p>
                 </div>
               </li>
-              <li class="our-dish-img-item">
+              <li class="our-dish__item">
                 <img
-                  class="our-dish-img"
+                  class="our-dish__img"
                   src="./images/pivnaya_tarelka.jpg"
                   alt="блюдо"
                   width="160"
                 />
-                <div class="our-dish-vrem">
-                  <p class="our-dish-meta">Пивное плато</p>
-                  <p class="our-dish-price">300грн</p>
+                <div class="our-dish__dscr">
+                  <p class="our-dish__dish">Пивное плато</p>
+                  <p class="our-dish__price">300грн</p>
                 </div>
               </li>
-              <li class="our-dish-img-item">
-                <img class="our-dish-img" src="./images/stake.jpg" alt="блюдо" width="160" />
-                <div class="our-dish-vrem">
-                  <p class="our-dish-meta">Стейк Рибай</p>
-                  <p class="our-dish-price">280 грн</p>
+              <li class="our-dish__item">
+                <img class="our-dish__img" src="./images/stake.jpg" alt="блюдо" width="160" />
+                <div class="our-dish__dscr">
+                  <p class="our-dish__dish">Стейк Рибай</p>
+                  <p class="our-dish__price">280 грн</p>
                 </div>
               </li>
             </ul>
@@ -287,52 +287,54 @@
         </ul>
       </div>
     </section>
-    <!---------------------------------------------------------------------------------- MENU----------------------------------------------------------------------------- -->
+    <!---------------------------------------------------------------------------------- FEEDBACK----------------------------------------------------------------------------- -->
     <section class="feedback" id="dishes-and-cook">
       <div class="container">
-        <p class="feedback-text">
+        <p class="feedback__text">
           Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
           Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать
           этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в
           Санкт-Петербург!!!
         </p>
-        <img class="feedback-img" src="./images/feedback-img.jpg" alt="мужчина" />
-        <h2 class="feedback-title">Посетитель</h2>
-        <p class="feedback-subtext">Николай</p>
-        <div class="feedback-point-thmb">
-          <span class="feedback-point"></span>
-          <span class="feedback-point"></span>
-          <span class="current-point"></span>
+        <img class="feedback__img" src="./images/feedback-img.jpg" width="150" alt="мужчина" />
+        <h2 class="feedback__title">Посетитель</h2>
+        <p class="feedback__name">Николай</p>
+        <div class="feedback__selectors-wrapper">
+          <span class="feedback__selector"></span>
+          <span class="feedback__selector"></span>
+          <span class="feedback__selector is-selected"></span>
         </div>
       </div>
     </section>
-    <!----------------------------------------------------------------------------------DISHES AND COOK----------------------------------------------------------------------------- -->
-    <section class="dishes-and-cook" id="dishes-and-cook">
+    <!----------------------------------------------------------------------------------GALLERY----------------------------------------------------------------------------- -->
+    <section class="gallery" id="dishes-and-cook">
       <div class="container">
-        <h2 class="dishes-title">Галерея <span class="color-span">Блюд</span></h2>
-        <div class="dishes-thmb container">
-          <ul class="dishes-list-1">
-            <li class="dishes-item-1 large">
+        <h2 class="gallery__title gallery__title--decor">
+          Галерея <span class="color-span">Блюд</span>
+        </h2>
+        <div class="gallery-cards__wrapper container">
+          <ul class="gallery-cards">
+            <li class="gallery-cards__item">
               <img
-                class="dishes-img-1"
+                class="gallery-cards__img"
                 src="./images/dish-img1.jpg"
                 alt="блюдо"
                 width="520"
                 height="270"
               />
             </li>
-            <li class="dishes-item-1">
+            <li class="gallery-cards__item">
               <img
-                class="dishes-img-1"
+                class="gallery-cards__img"
                 src="./images/dish-img2.jpg"
                 alt="блюдо"
                 width="253"
                 height="270"
               />
             </li>
-            <li class="dishes-item-1">
+            <li class="gallery-cards__item">
               <img
-                class="dishes-img-1"
+                class="gallery-cards__img"
                 src="./images/dish-img3.jpg"
                 alt="блюдо"
                 width="253"
@@ -341,28 +343,28 @@
             </li>
           </ul>
 
-          <ul class="dishes-list-1">
-            <li class="dishes-item-1">
+          <ul class="gallery-cards">
+            <li class="gallery-cards__item">
               <img
-                class="dishes-img-1"
+                class="gallery-cards__img"
                 src="./images/dish-img2.jpg"
                 alt="блюдо"
                 width="253"
                 height="270"
               />
             </li>
-            <li class="dishes-item-1">
+            <li class="gallery-cards__item">
               <img
-                class="dishes-img-1"
+                class="gallery-cards__img"
                 src="./images/dish-img3.jpg"
                 alt="блюдо"
                 width="253"
                 height="270"
               />
             </li>
-            <li class="dishes-item-1 large">
+            <li class="gallery-cards__item large">
               <img
-                class="dishes-img-1"
+                class="gallery-cards__img"
                 src="./images/dish-img1.jpg"
                 alt="блюдо"
                 width="520"
@@ -371,21 +373,21 @@
             </li>
           </ul>
         </div>
-        <h2 class="cook-title">Наши <span class="color-span">Повара</span></h2>
-        <ul class="cook-list">
-          <li class="cook-item">
-            <img class="cook-img" src="./images/cook-1.jpg" alt="повар" width="348" />
+        <h2 class="gallery__title">Наши <span class="color-span">Повара</span></h2>
+        <ul class="working-staff">
+          <li class="working-staff__item">
+            <img class="working-staff__img" src="./images/cook-1.jpg" alt="повар" width="348" />
           </li>
-          <li class="cook-item">
-            <img class="cook-img" src="./images/cook-2.jpg" alt="повар" width="348" />
+          <li class="working-staff__item">
+            <img class="working-staff__img" src="./images/cook-2.jpg" alt="повар" width="348" />
           </li>
-          <li class="cook-item">
-            <img class="cook-img" src="./images/cook-3.jpg" alt="повар" width="348" />
+          <li class="working-staff__item">
+            <img class="working-staff__img" src="./images/cook-3.jpg" alt="повар" width="348" />
           </li>
         </ul>
       </div>
     </section>
-    <!----------------------------------------------------------------------------------CONTACTS----------------------------------------------------------------------------- -->
+    <!----------------------------------------------------------------------------------FOTER/CONTACTS----------------------------------------------------------------------------- -->
     <footer id="footer">
       <div class="container">
         <div class="online">
