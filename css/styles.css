@@ -873,7 +873,7 @@ footer {
   background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
     url(../images/footer.jpg);
   max-width: 1920px;
-  height: 732px;
+  height: 900px;
   margin: 0 auto;
   background-size: cover;
 
