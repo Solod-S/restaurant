@@ -1,7 +1,4 @@
-/* font-family: 'Cookie', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Tinos', serif; */
-:root {
+/* :root {
   --primary-accent-color: #ff7400;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
@@ -10,9 +7,10 @@ font-family: 'Tinos', serif; */
   --bg-color: #656363;
   --decor-color: #c4c4c4;
   --decor-color-2: #ff0000;
-}
+  --bg-br-accent-color: #d67e34;
+} */
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -64,10 +62,10 @@ a {
 }
 .color-span {
   color: var(--secondary-accent-color);
-}
+} */
 /* <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- --> */
 
-.header {
+/* .header {
   position: fixed;
   z-index: 22;
   top: 0;
@@ -189,11 +187,11 @@ a {
   color: var(--primary-accent-color);
   background-color: var(--primary-white-color);
   transform: scale(1.1);
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- HERO ----------------------------------------------------------------------------- --> */
 
-.hero {
+/* .hero {
   background-image: url(../images/hero-bg.jpg);
   background-color: var(--bg-color);
   background-size: cover;
@@ -287,10 +285,10 @@ a {
   color: var(--primary-accent-color);
   background-color: var(--primary-white-color);
   transform: scale(1.1);
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- HISTORY ----------------------------------------------------------------------------- --> */
-.history {
+/* .history {
   padding-top: 240px;
   padding-bottom: 182px;
   position: relative;
@@ -433,17 +431,15 @@ a {
   left: 77%;
   top: 43%;
   box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- RESERVATION ----------------------------------------------------------------------------- --> */
-.reservation {
+/* .reservation {
   padding-top: 80px;
   padding-bottom: 104px;
   content: '';
   max-width: 1920px;
   margin: 0 auto;
-  /* width: 100%;
-  height: 100%; */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(../images/celebration.jpg);
   background-color: var(--bg-color);
@@ -465,7 +461,7 @@ a {
   font-size: 52px;
   line-height: calc(60 / 52);
 
-  color: #d67e34;
+  color: var(--bg-br-accent-color);
   animation-duration: 1s;
 }
 .reservation__text {
@@ -492,9 +488,9 @@ a {
 
   color: var(--primary-white-color);
   background: var(--primary-accent-color);
-}
+} */
 /* <!-- -------------------------------------------------------------------------------- OUR DISH ----------------------------------------------------------------------------- --> */
-.our-dish {
+/* .our-dish {
   padding-bottom: 150px;
   padding-top: 150px;
 }
@@ -521,11 +517,10 @@ a {
   flex-grow: 1;
 }
 .our-dish__item {
-  /* order: 1; */
+
   display: flex;
   align-items: center;
 
-  /* box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.1); */
 }
 .our-dish__item:not(:last-child) {
   margin-bottom: 25px;
@@ -573,10 +568,10 @@ a {
   display: flex;
   flex-grow: 1;
   align-items: baseline;
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- MENU ----------------------------------------------------------------------------- --> */
-.menu {
+/* .menu {
   background-image: url(../images/menu-bg.jpg);
   background-color: var(--bg-color);
   max-width: 1920px;
@@ -661,7 +656,7 @@ a {
   height: 100px;
   border-radius: 50%;
 
-  background-color: #d67e34;
+  background-color: var(--bg-br-accent-color);
   border: 7px solid var(--primary-white-color);
 }
 
@@ -717,13 +712,13 @@ a {
   line-height: calc(22 / 16);
 
   color: var(--primary-white-color);
-  background: #d67e34;
+  background: var(--bg-br-accent-color);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- FEEDBACK ----------------------------------------------------------------------------- --> */
 
-.clients-feedback {
+/* .clients-feedback {
   background-color: #e5e5e5;
   max-width: 1920px;
   min-height: 550px;
@@ -791,12 +786,12 @@ a {
   background-color: transparent;
   border: 3px solid var(--primary-accent-color);
   border-radius: 50%;
-}
+} */
 /* <!-- -------------------------------------------------------------------------------- GALLERY ----------------------------------------------------------------------------- --> */
 /* .gallery-cards__img {
   display: block;
 } */
-.gallery {
+/* .gallery {
   padding-bottom: 100px;
   padding-top: 100px;
 }
@@ -862,10 +857,10 @@ a {
 
 .working-staff__item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- FOTER/CONTACTS ----------------------------------------------------------------------------- --> */
-footer {
+/* footer {
   display: flex;
   background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
     url(../images/footer.jpg);
@@ -1062,10 +1057,10 @@ footer .container {
   line-height: calc(19 / 14);
   color: var(--primary-white-color);
   opacity: 0.6;
-}
+} */
 
 /* <!-- -------------------------------------------------------------------------------- Modal ----------------------------------------------------------------------------- --> */
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1188,11 +1183,11 @@ footer .container {
   text-transform: uppercase;
   line-height: calc(22 / 16);
   color: var(--primary-white-color);
-  background: #d67e34;
+  background: var(--bg-br-accent-color);
   box-shadow: 5px 5px 10px rgb(0 0 0 / 25%);
 }
 
 .modal-window__input:hover,
 .modal-window__textarea-input:hover {
-  border-color: #d67e34;
-}
+  border-color: var(--bg-br-accent-color);
+} */
