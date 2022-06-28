@@ -4,61 +4,69 @@
   min-height: 550px;
   padding: 150px 0;
   margin: 0 auto;
-}
-.clients-feedback__text {
-  margin-bottom: 76px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: calc(27 / 20);
-  text-align: center;
 
-  color: var(--primary-black-color);
-}
-.clients-feedback__img {
-  display: block;
-  margin-bottom: 16px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.clients-feedback__title {
-  margin-bottom: 9px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: calc(27 / 20);
-  text-align: center;
+  &__text {
+    margin-bottom: 76px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: calc(27 / 20);
+    text-align: center;
 
-  color: var(--primary-black-color);
-}
-.clients-feedback__name {
-  margin-bottom: 9px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: calc(27 / 20);
-  text-align: center;
+    color: var(--primary-black-color);
+  }
 
-  color: var(--primary-black-color);
-}
-.clients-feedback__selectors-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.clients-feedback__selector {
-  display: block;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  left: 710px;
-  top: 4582px;
+  &__img {
+    display: block;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  background: var(--decor-color);
+  &__title {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(27 / 20);
+    text-align: center;
+
+    color: var(--primary-black-color);
+  }
+
+  &__name {
+    margin-bottom: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(27 / 20);
+    text-align: center;
+
+    color: var(--primary-black-color);
+  }
+
+  &__selectors-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__selector {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 710px;
+    top: 4582px;
+
+    background: var(--decor-color);
+  }
+
+  &__selector:not(:last-child) {
+    margin-right: 2px;
+  }
 }
-.clients-feedback__selector:not(:last-child) {
-  margin-right: 2px;
-}
+
 .is-selected {
   display: block;
   width: 12px;
