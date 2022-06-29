@@ -11,47 +11,52 @@
   background-color: var(--bg-color);
   background-size: cover;
   background-repeat: no-repeat;
-}
-.reservation .container {
-  display: flex;
-  justify-content: space-between;
-}
 
-.reservation__dscr {
-  width: 601px;
-}
-.reservation__title {
-  padding-bottom: 20px;
-  font-family: 'Tinos', serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: calc(60 / 52);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  color: var(--bg-br-accent-color);
-  animation-duration: 1s;
-}
-.reservation__text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: calc(33 / 24);
+  &__dscr {
+    width: 601px;
+  }
 
-  color: var(--primary-white-color);
-  animation-duration: 1s;
-}
-.reservation__btn-wrapper {
-  display: flex;
-  align-items: center;
-}
-.reservation__btn {
-  margin-right: 20px;
-  padding: 14px 19px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: calc(19 / 14);
+  &__title {
+    padding-bottom: 20px;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: calc(60 / 52);
 
-  color: var(--primary-white-color);
-  background: var(--primary-accent-color);
+    color: var(--bg-br-accent-color);
+    animation-duration: 1s;
+  }
+
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(33 / 24);
+
+    color: var(--primary-white-color);
+    animation-duration: 1s;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-right: 20px;
+    padding: 14px 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+
+    color: var(--primary-white-color);
+    background: var(--primary-accent-color);
+  }
 }
