@@ -1,6 +1,13 @@
 .gallery {
-  padding-bottom: 100px;
-  padding-top: 100px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
 
   &__title {
     margin-bottom: 60px;
@@ -15,56 +22,83 @@
   }
 
   &__title--decor::before {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    transform: translate(-616%, 112%);
-    content: '';
-    width: 30px;
-    height: 100px;
+    @media screen and (min-width: $breakpointDesktop) {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      transform: translate(-616%, 112%);
+      content: '';
+      width: 30px;
+      height: 100px;
 
-    background-color: var(--decor-color-2);
+      background-color: var(--decor-color-2);
+    }
   }
 
   &__title--decor::after {
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    transform: translate(616%, 112%);
-    content: '';
-    width: 30px;
-    height: 100px;
+    @media screen and (min-width: $breakpointDesktop) {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      transform: translate(616%, 112%);
+      content: '';
+      width: 30px;
+      height: 100px;
 
-    background-color: var(--decor-color-2);
+      background-color: var(--decor-color-2);
+    }
   }
 }
 
 .gallery-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 42%;
-  margin-right: 10px;
-
-  &__wrapper {
-    margin-bottom: 100px;
+  @media screen and (min-width: $breakpointDesktop) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 42%;
+    margin-right: 10px;
   }
-
+  &__wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__img {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   &__item {
-    margin-right: 14px;
-    margin-top: 14px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 14px;
+      margin-top: 14px;
+    }
   }
 }
 
 .working-staff {
-  display: flex;
-  justify-content: center;
-
+  @media screen and (min-width: $breakpointDesktop) {
+    display: flex;
+    justify-content: center;
+  }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 30px;
+    }
   }
 }

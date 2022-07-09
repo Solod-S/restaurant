@@ -107,10 +107,8 @@
   }
 
   &__icon {
-    @media screen and (min-width: $breakpointDesktop) {
-      fill: var(--secondary-accent-color);
-      padding-bottom: 4px;
-    }
+    fill: var(--secondary-accent-color);
+    padding-bottom: 4px;
   }
 
   &__title {
