@@ -928,8 +928,15 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .decoration__list {
+    position: relative;
+    height: 492px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .decoration__img-zero {
-    position: absolute;
+    position: relative;
     left: 35%;
     top: 42px;
   }
@@ -964,6 +971,8 @@ a {
     position: absolute;
     left: -3%;
     top: 46px;
+    -webkit-box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -983,6 +992,8 @@ a {
     position: absolute;
     left: 29%;
     top: 114px;
+    -webkit-box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -1054,6 +1065,119 @@ a {
 }
 
 /* <!-- -------------------------------------------------------------------------------- RESERVATION ----------------------------------------------------------------------------- --> */
+@media screen and (max-width: 767px) {
+  .reservation {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url(../images/celebration-mob.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/celebration-mob.jpg);
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation {
+    padding-top: 80px;
+    padding-bottom: 104px;
+    content: '';
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url(../images/celebration.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/celebration.jpg);
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reservation__wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reservation__dscr {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation__dscr {
+    width: 601px;
+  }
+}
+
+.reservation__title {
+  margin-bottom: 20px;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(32 / 30);
+  color: var(--bg-br-accent-color);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@media screen and (max-width: 767px) {
+  .reservation__title {
+    max-width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation__title {
+    font-size: 52px;
+    line-height: calc(60 / 52);
+  }
+}
+
+.reservation__text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(33 / 24);
+  color: var(--primary-white-color);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@media screen and (min-width: 1200px) {
+  .reservation__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.reservation__btn {
+  margin-right: 20px;
+  padding: 14px 19px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  color: var(--primary-white-color);
+  background: var(--primary-accent-color);
+}
+
 /* <!-- -------------------------------------------------------------------------------- OUR DISH ----------------------------------------------------------------------------- --> */
 /* <!-- -------------------------------------------------------------------------------- MENU ----------------------------------------------------------------------------- --> */
 /* <!-- -------------------------------------------------------------------------------- FEEDBACK ----------------------------------------------------------------------------- --> */

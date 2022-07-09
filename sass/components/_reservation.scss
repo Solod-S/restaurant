@@ -1,35 +1,61 @@
 .reservation {
-  padding-top: 80px;
-  padding-bottom: 104px;
-  content: '';
-  max-width: 1920px;
-  margin: 0 auto;
-  /* width: 100%;
-  height: 100%; */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url(../images/celebration.jpg);
-  background-color: var(--bg-color);
-  background-size: cover;
-  background-repeat: no-repeat;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url(../images/celebration-mob.jpg);
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-top: 80px;
+    padding-bottom: 104px;
+    content: '';
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url(../images/celebration.jpg);
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      text-align: center;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__dscr {
-    width: 601px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      width: 601px;
+    }
   }
 
   &__title {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-family: 'Tinos', serif;
     font-weight: 400;
-    font-size: 52px;
-    line-height: calc(60 / 52);
+    font-size: 30px;
+    line-height: calc(32 / 30);
 
     color: var(--bg-br-accent-color);
     animation-duration: 1s;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      max-width: 74%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      font-size: 52px;
+      line-height: calc(60 / 52);
+    }
   }
 
   &__text {
@@ -43,8 +69,10 @@
   }
 
   &__btn-wrapper {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__btn {
