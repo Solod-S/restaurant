@@ -1,88 +1,142 @@
 .our-dish {
-  padding-bottom: 150px;
-  padding-top: 150px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
 
   .our-dish__title {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-family: 'Tinos', serif;
     font-weight: 400;
     font-size: 54px;
     line-height: calc(62 / 54);
-
     color: var(--primary-black-color);
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-bottom: 100px;
+      font-size: 40px;
+      line-height: calc(46 / 40);
+    }
   }
 
   &__wrapper {
-    display: flex;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+    }
   }
 
   &__main-img {
     box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.1);
-    margin-right: 30px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 30px;
+    }
   }
 
   &__list {
-    flex-grow: 1;
+    @media screen and (min-width: $breakpointDesktop) {
+      flex-grow: 1;
+    }
   }
 
   &__item {
-    /* order: 1; */
-    display: flex;
-    align-items: center;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: flex;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      /* order: 1; */
+      display: flex;
+      align-items: center;
 
-    /* box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.1); */
+      /* box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.1); */
+    }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 25px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-bottom: 25px;
+    }
   }
 
   &__img {
-    display: block;
-    margin-right: 30px;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: block;
+      margin-right: 30px;
+    }
   }
 
   &-list {
-    width: 464px;
+    @media screen and (min-width: $breakpointDesktop) {
+      width: 464px;
+    }
   }
 
   &__dish {
-    order: 1;
+    font-size: 22px;
+    line-height: calc(25 / 22);
+
     font-family: 'Tinos', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: calc(30 / 26);
-
     color: var(--primary-black-color);
+    @media screen and (min-width: $breakpointDesktop) {
+      order: 1;
+
+      font-size: 26px;
+      line-height: calc(30 / 26);
+    }
   }
 
   &__price {
-    order: 3;
-    margin-left: auto;
     font-family: 'Tinos', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: calc(30 / 26);
-
     color: var(--primary-black-color);
+    @media screen and (min-width: $breakpointDesktop) {
+      order: 3;
+      margin-left: auto;
+    }
   }
 
   &__dscr::after {
-    order: 2;
-    margin-left: 7px;
-    margin-right: 10px;
-    flex-grow: 1;
-    content: '';
+    @media screen and (min-width: $breakpointDesktop) {
+      order: 2;
+      margin-left: 7px;
+      margin-right: 10px;
+      flex-grow: 1;
+      content: '';
 
-    border-bottom: 1px dashed var(--primary-black-color);
+      border-bottom: 1px dashed var(--primary-black-color);
+    }
   }
 
   &__dscr {
-    display: flex;
-    flex-grow: 1;
-    align-items: baseline;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      flex-grow: 1;
+      align-items: baseline;
+    }
   }
 }
