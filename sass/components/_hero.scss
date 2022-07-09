@@ -1,34 +1,89 @@
+.hero-mobile {
+  @media screen and (min-width: $breakpointTablet) {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 170px;
+  //   .hero-mobile__link {
+  // }
+  .hero-mobile__logo {
+    height: 32px;
+  }
+  .hero-mobile__btn {
+    background-color: transparent;
+    border: none;
+  }
+  // .hero-mobile__svg {
+  // }
+  // .hero-mobile__icon-open {
+  // }
+  // .hero-mobile__icon-close {
+  // }
+}
+
 .hero {
-  background-image: url(../images/hero-bg.jpg);
+  padding-top: 20px;
+  padding-bottom: 304px;
+
+  background-image: url(../images/hero-bg-mobile.jpg);
   background-color: var(--bg-color);
   background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 1920px;
-  height: 800px;
-  margin: 0 auto;
-  padding-top: 205px;
-  padding-bottom: 231px;
+  @media screen and (min-width: $breakpointDesktop) {
+    background-image: url(../images/hero-bg.jpg);
+    background-color: var(--bg-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 205px;
+    padding-bottom: 231px;
+  }
 
   &__greating {
-    margin-left: 33px;
-    font-family: 'Tinos', serif;
     font-weight: 400;
-    font-size: 50px;
-    line-height: calc(92 / 80);
+    font-size: 40px;
+    line-height: calc(46 / 40);
 
+    font-family: 'Tinos', serif;
     color: var(--thrd-accent-color);
     animation-duration: 1s;
+
+    @media screen and (max-width: $breakpointTablet) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-left: 33px;
+
+      font-weight: 400;
+      font-size: 50px;
+      line-height: calc(92 / 80);
+    }
   }
 
   &__title {
-    margin-bottom: 12px;
     font-family: 'Tinos', serif;
     font-weight: 400;
-    font-size: 80px;
-    line-height: calc(92 / 80);
-
+    font-size: 40px;
+    line-height: calc(46 / 40);
     color: var(--thrd-accent-color);
     animation-duration: 1s;
+
+    @media screen and (max-width: $breakpointTablet) {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-bottom: 12px;
+
+      font-weight: 400;
+      font-size: 80px;
+      line-height: calc(92 / 80);
+    }
   }
 
   &__text-wrapper {
@@ -37,6 +92,10 @@
   }
 
   &__text::before {
+    @media screen and (max-width: $breakpointDesktop) {
+      display: none;
+    }
+
     position: absolute;
     top: 50%;
     left: 104px;
@@ -48,6 +107,9 @@
   }
 
   &__text::after {
+    @media screen and (max-width: $breakpointDesktop) {
+      display: none;
+    }
     position: absolute;
     top: 50%;
     left: 350px;
@@ -59,22 +121,32 @@
   }
 
   &__text {
-    margin-left: 174px;
-    margin-bottom: 21px;
+    font-size: 15px;
+    line-height: calc(20 / 15);
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 18px;
-    line-height: calc(25 / 18);
-
     color: var(--primary-white-color);
+
+    @media screen and (max-width: $breakpointTablet) {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-left: 174px;
+      margin-bottom: 21px;
+
+      font-size: 18px;
+      line-height: calc(25 / 18);
+    }
+  }
+  &__btn-wrapper {
+    @media screen and (max-width: $breakpointTablet) {
+      width: 100%;
+    }
   }
 
   &__btn {
-    display: inline-block;
-    margin-left: 190px;
-    padding: 14px 28px;
-    cursor: pointer;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -82,12 +154,34 @@
     font-size: 14px;
     line-height: calc(19 / 14);
 
+    padding: 14px 28px;
+    cursor: pointer;
     border-radius: 4px;
     color: var(--primary-white-color);
     background: var(--primary-accent-color);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: $breakpointTablet) {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+    }
+
+    @media screen and (min-width: $breakpointDesktop) {
+      display: inline-block;
+      margin-left: 190px;
+
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
   }
 
   &__btn:hover,

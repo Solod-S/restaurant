@@ -52,18 +52,44 @@
     <main>
       <section class="hero" id="hero">
         <div class="container">
+          <div class="hero-mobile">
+            <a href="./index.html" class="hero-mobile__link"><img class="hero-mobile__logo" src="./images/logo.svg" alt="logo" height="31"></a>
+           <button
+                class="hero-mobile__btn"
+                type="button"
+                aria-expanded="false"
+                data-menu-button
+              >
+                <svg
+                  class="hero-mobile__svg"
+                  width="40px"
+                  height="40px"
+                  aria-label="menu"
+                >
+                  <use
+                    class="hero-mobile__icon-open"
+                    href="./images/symbol-defs.svg#icon-menu-mob-open"
+                  ></use>
+                  <use
+                    class="hero-mobile__icon-close"
+                    href="./images/symbol-defs.svg#icon-mobile-close"
+                  ></use>
+                </svg>
+          </div>
           <h2 class="hero__greating">Добро пожаловать в</h2>
           <h1 class="hero__title">Наш ресторан</h1>
           <div class="hero__text-wrapper">
             <p class="hero__text">Дом лучшей еды</p>
           </div>
+          <div class="hero__btn-wrapper">
           <a class="hero__btn" href="#menu">
             <span lang="en">view menu</span>
           </a>
+          </div>
         </div>
       </section>
       <!---------------------------------------------------------------------------------- HISTORY ------------------------------------------------------------------------------->
-      <section class="history">
+      <!-- <section class="history">
         <div class="container features--modificator-container">
           <ul class="features">
             <li class="features__item" data-aos="fade-up-right" data-aos-duration="800">
@@ -174,9 +200,9 @@
           </div>
         </div>
         <div id="reservation"></div>
-      </section>
+      </section> -->
       <!---------------------------------------------------------------------------------- RESERVATION----------------------------------------------------------------------------- -->
-      <section class="reservation">
+      <!-- <section class="reservation">
         <div class="container reservation__wrapper">
           <div class="reservation__dscr">
             <h2 class="reservation__title">Отпразднуйте в одном из самых лучших ресторанов.</h2>
@@ -186,9 +212,9 @@
             <button class="reservation__btn" data-modal-open>Забронировать</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!---------------------------------------------------------------------------------- OUR DISH----------------------------------------------------------------------------- -->
-      <section class="our-dish">
+      <!-- <section class="our-dish">
         <div class="container">
           <h2 class="our-dish__title">Наши <span class="color-span">Блюда</span></h2>
           <div class="our-dish__wrapper">
@@ -228,9 +254,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- -------------------------------------------------------------------------------- MENU----------------------------------------------------------------------------- -->
-    </main>
+    <!-- </main>
     <section class="menu" id="menu">
       <div class="container">
         <h2 class="menu__title">Наше меню</h2>
@@ -282,9 +308,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!---------------------------------------------------------------------------------- FEEDBACK----------------------------------------------------------------------------- -->
-    <section class="clients-feedback" id="">
+    <!-- <section class="clients-feedback" id="">
       <div class="container">
         <p class="clients-feedback__text">
           Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
@@ -306,9 +332,9 @@
           <span class="clients-feedback__selector is-selected"></span>
         </div>
       </div>
-    </section>
+    </section> -->
     <!----------------------------------------------------------------------------------GALLERY----------------------------------------------------------------------------- -->
-    <section class="gallery" id="dishes-and-cook">
+    <!-- <section class="gallery" id="dishes-and-cook">
       <div class="container">
         <h2 class="gallery__title gallery__title--decor">
           Галерея <span class="color-span">Блюд</span>
@@ -387,9 +413,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!----------------------------------------------------------------------------------FOTER/CONTACTS----------------------------------------------------------------------------- -->
-    <footer class="footer" id="footer">
+    <!-- <footer class="footer" id="footer">
       <div class="container footer__wrapper">
         <div class="feedback">
           <h2 class="feedback__title">Отправить отзыв</h2>
@@ -474,9 +500,9 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!----------------------------------------------------------------------------------Modal----------------------------------------------------------------------------- -->
-    <div class="bacdrop is-hidden" data-modal>
+    <!-- <div class="bacdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="modal-window__close-btn" data-modal-close>
           <svg class="modal-window__close-btn-icon" width="11" height="11">
@@ -512,6 +538,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
   </body>
 </html>
