@@ -1,22 +1,36 @@
 .footer {
-  display: flex;
-  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
-    url(../images/footer.jpg);
-  max-width: 1920px;
-  height: 900px;
-  margin: 0 auto;
-  background-size: cover;
-
-  background-repeat: no-repeat;
-
-  &__wrapper {
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+      url(../images/footer.jpg);
+    margin: 0 auto;
+    max-width: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
     display: flex;
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+      url(../images/footer.jpg);
+    max-width: 1920px;
+    height: 900px;
+    margin: 0 auto;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+  &__wrapper {
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+    }
   }
 }
 
 .feedback {
-  padding: 130px 20px;
-  width: 50%;
+  @media screen and (min-width: $breakpointDesktop) {
+    padding: 130px 20px;
+    width: 50%;
+  }
 
   &__title {
     margin-bottom: 80px;
@@ -41,20 +55,28 @@
 
   color: var(--primary-white-color);
 
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    text-align: center;
+  }
+
   &__wrapper {
-    display: flex;
-    margin-bottom: 50px;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      margin-bottom: 50px;
+    }
   }
 
   &__item:first-child {
-    margin-right: 30px;
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 30px;
+    }
   }
 
   &__input {
     width: 264px;
     height: 30px;
-    background-color: transparent;
     border: none;
+    background-color: transparent;
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -63,10 +85,16 @@
     color: var(--primary-white-color);
 
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__textarea {
-    width: 560px;
+    width: 100%;
+
     height: 76px;
     background-color: transparent;
     border: none;
@@ -79,6 +107,9 @@
     color: var(--primary-white-color);
 
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    width: 560px;
   }
 
   &__item--textarea-modificator {
@@ -101,11 +132,13 @@
 }
 
 .our-contacts {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-left: 120px;
-  padding-right: 20px;
-  width: 50%;
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 120px;
+    padding-right: 20px;
+    width: 50%;
+  }
 
   &__title {
     margin-bottom: 40px;

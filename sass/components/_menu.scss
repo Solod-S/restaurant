@@ -2,7 +2,7 @@
   @media screen and (max-width: $breakpointBeeforeTablet) {
     background-image: url(../images/menu-bg-mob.jpg);
     background-color: var(--bg-color);
-    max-width: 460px;
+    max-width: 480px;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,6 +55,10 @@
     background-color: var(--primary-white-color);
     padding: 80px 63px 29px 62px;
     @media screen and (max-width: $breakpointBeeforeTablet) {
+      & {
+        margin-left: auto;
+        margin-right: auto;
+      }
       &:not(:first-child) {
         display: none;
       }

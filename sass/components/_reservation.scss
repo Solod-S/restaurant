@@ -5,6 +5,9 @@
     background-color: var(--bg-color);
     padding-top: 20px;
     padding-bottom: 30px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: $breakpointDesktop) {
     padding-top: 80px;

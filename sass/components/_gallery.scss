@@ -101,4 +101,10 @@
       margin-right: 30px;
     }
   }
+  &__img {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
