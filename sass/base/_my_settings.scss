@@ -68,6 +68,21 @@ a {
     width: $breakpointDesktop;
   }
 }
+
+.container--footer {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $breakpointTell) {
+    width: $breakpointTell;
+  }
+  @media screen and (min-width: $breakpointTablet) {
+    width: $breakpointTablet;
+  }
+}
 .color-span {
   color: var(--secondary-accent-color);
 }

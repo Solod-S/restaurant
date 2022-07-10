@@ -88,7 +88,7 @@
       @media screen and (max-width: $breakpointBeeforeTablet) {
         max-width: 450px;
       }
-      @media screen and (min-width: $breakpointTablet) {
+      @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
         width: 415px;
         margin: 0 auto;
       }

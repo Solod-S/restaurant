@@ -22,7 +22,7 @@
   }
 
   &__title--decor::before {
-    @media screen and (min-width: $breakpointDesktop) {
+    @media screen and (min-width: 1600px) {
       position: absolute;
       display: block;
       top: 0;
@@ -37,7 +37,7 @@
   }
 
   &__title--decor::after {
-    @media screen and (min-width: $breakpointDesktop) {
+    @media screen and (min-width: 1600px) {
       position: absolute;
       display: block;
       top: 0;
