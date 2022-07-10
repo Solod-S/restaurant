@@ -1,13 +1,21 @@
 .header {
-  display: none;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    display: none;
+  }
+
   position: fixed;
   z-index: 22;
   top: 0;
   left: 50%;
+
   transform: translateX(-50%);
   text-align: center;
 
   &::before {
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      max-width: 768px;
+      margin: 0 auto;
+    }
     z-index: -1;
     position: fixed;
     content: '';

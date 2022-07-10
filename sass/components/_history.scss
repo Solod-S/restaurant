@@ -19,7 +19,7 @@
     line-height: calc(40 / 46);
     color: var(--primary-black-color);
 
-    @media screen and (min-width: $breakpointDesktop) {
+    @media screen and (min-width: $breakpointTablet) {
       text-align: center;
       margin-bottom: 21px;
 
@@ -40,6 +40,9 @@
     @media screen and (max-width: $breakpointBeeforeTablet) {
       margin-bottom: 30px;
     }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      margin-bottom: 50px;
+    }
   }
 
   // .history-block-img {
@@ -53,212 +56,244 @@
       flex-grow: 1;
       position: relative;
     }
-  }
-}
-
-.features {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -143px;
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      position: relative;
+    }
   }
 
-  @media screen and (min-width: $breakpointDesktop) {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  .features {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -143px;
+    }
 
-  &--modificator-container {
     @media screen and (min-width: $breakpointDesktop) {
-      width: 1200px;
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
     }
-  }
 
-  &__item {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      max-width: 450px;
+    &--modificator-container {
+      @media screen and (min-width: $breakpointDesktop) {
+        width: 1200px;
+      }
     }
-    text-align: center;
-    background-color: var(--primary-white-color);
-    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
-    @media screen and (min-width: $breakpointDesktop) {
-    }
-    &:not(:last-child) {
+
+    &__item {
       @media screen and (max-width: $breakpointBeeforeTablet) {
+        max-width: 450px;
+      }
+      @media screen and (min-width: $breakpointTablet) {
+        width: 415px;
+        margin: 0 auto;
+      }
+      text-align: center;
+      background-color: var(--primary-white-color);
+      box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+      @media screen and (min-width: $breakpointDesktop) {
+      }
+      &:not(:last-child) {
+        @media screen and (max-width: $breakpointBeeforeDesktop) {
+          margin-bottom: 15px;
+        }
+        @media screen and (min-width: $breakpointDesktop) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &__wrapper {
+      align-items: center;
+      padding: 60px 50px 50px 50px;
+      @media screen and (min-width: $breakpointDesktop) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 30px 20px 30px;
+        width: 328px;
+      }
+    }
+
+    &__icon {
+      fill: var(--secondary-accent-color);
+      padding-bottom: 4px;
+    }
+
+    &__title {
+      padding-bottom: 6px;
+
+      font-family: 'Tinos', serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: calc(30 / 26);
+
+      color: #2c2c2c;
+      @media screen and (min-width: $breakpointTablet) {
+        padding-bottom: 20px;
+      }
+    }
+
+    &__text {
+      font-family: 'Tinos', serif;
+      font-weight: 400;
+      font-size: 22px;
+      text-align: center;
+      line-height: calc(25 / 22);
+
+      color: var(--bg-color);
+      @media screen and (min-width: $breakpointTablet) {
+        font-size: 26px;
+      }
+    }
+  }
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  .decoration {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      flex-grow: 1;
+    }
+    &__list {
+      @media screen and (max-width: $breakpointBeeforeDesktop) {
+        position: relative;
+        height: 492px;
+      }
+    }
+    &__img-zero {
+      @media screen and (max-width: $breakpointBeeforeTablet) {
+        position: relative;
+        left: 35%;
+        top: 42px;
+      }
+      @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+        position: relative;
+        left: 50%;
+        top: 42px;
+      }
+      @media screen and (min-width: $breakpointDesktop) {
+        position: absolute;
+        left: 76%;
+        top: 8%;
+      }
+    }
+    &__img-first {
+      @media screen and (max-width: $breakpointBeeforeTablet) {
+        position: absolute;
+        left: 14%;
+        top: 0;
+      }
+      @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+        position: absolute;
+        left: 29%;
+        top: 0;
+      }
+
+      @media screen and (min-width: $breakpointDesktop) {
+        position: absolute;
+        left: 68%;
+        top: -3%;
+      }
+    }
+    &__img-second {
+      @media screen and (max-width: $breakpointBeeforeTablet) {
+        position: absolute;
+        left: -3%;
+        top: 46px;
+        box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+      }
+      @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+        position: absolute;
+        left: 7%;
+        top: 46px;
+        box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+      }
+      @media screen and (min-width: $breakpointDesktop) {
+        position: absolute;
+        left: 50%;
+        top: 12%;
+        mix-blend-mode: normal;
+        box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &__img-thrd {
+      @media screen and (max-width: $breakpointBeeforeTablet) {
+        position: absolute;
+        left: 29%;
+        top: 114px;
+        box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+      }
+      @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+        position: absolute;
+        left: 58%;
+        top: 114px;
+        box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+      }
+      @media screen and (min-width: $breakpointDesktop) {
+        position: absolute;
+        left: 77%;
+        top: 43%;
+        box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .information-display {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    &__item:not(:last-child) {
+      @media screen and (max-width: $breakpointBeeforeDesktop) {
         margin-bottom: 15px;
       }
       @media screen and (min-width: $breakpointDesktop) {
-        margin-right: 30px;
+        margin-right: 40px;
       }
     }
-  }
 
-  &__wrapper {
-    align-items: center;
-    padding: 60px 50px 50px 50px;
-    @media screen and (min-width: $breakpointDesktop) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 48px 30px 20px 30px;
-      width: 328px;
-    }
-  }
-
-  &__icon {
-    fill: var(--secondary-accent-color);
-    padding-bottom: 4px;
-  }
-
-  &__title {
-    padding-bottom: 6px;
-
-    font-family: 'Tinos', serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: calc(30 / 26);
-
-    color: #2c2c2c;
-    @media screen and (min-width: $breakpointDesktop) {
-      padding-bottom: 20px;
-    }
-  }
-
-  &__text {
-    font-family: 'Tinos', serif;
-    font-weight: 400;
-    font-size: 22px;
-    text-align: center;
-    line-height: calc(25 / 22);
-
-    color: var(--bg-color);
-    @media screen and (min-width: $breakpointDesktop) {
-      font-size: 26px;
-    }
-  }
-}
-
-.decoration {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  @media screen and (min-width: $breakpointDesktop) {
-    display: flex;
-    flex-grow: 1;
-  }
-  &__list {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      position: relative;
-      height: 492px;
-    }
-  }
-  &__img-zero {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      position: relative;
-      left: 35%;
-      top: 42px;
-    }
-    @media screen and (min-width: $breakpointDesktop) {
-      position: absolute;
-      left: 76%;
-      top: 8%;
-    }
-  }
-  &__img-first {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      position: absolute;
-      left: 14%;
-      top: 0;
-    }
-    @media screen and (min-width: $breakpointDesktop) {
-      position: absolute;
-      left: 68%;
-      top: -3%;
-    }
-  }
-  &__img-second {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      position: absolute;
-      left: -3%;
-      top: 46px;
-      box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
-    }
-    @media screen and (min-width: $breakpointDesktop) {
-      position: absolute;
-      left: 50%;
-      top: 12%;
-      mix-blend-mode: normal;
-      box-shadow: 20px 0px 30px 3px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  &__img-thrd {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      position: absolute;
-      left: 29%;
-      top: 114px;
-      box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    &__item {
+      @media screen and (min-width: $breakpointDesktop) {
+        text-align: center;
+      }
     }
 
-    @media screen and (min-width: $breakpointDesktop) {
-      position: absolute;
-      left: 77%;
-      top: 43%;
-      box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+    &__up-text {
+      color: var(--secondary-accent-color);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      line-height: calc(54 / 40);
+
+      @media screen and (max-width: $breakpointBeeforeDesktop) {
+        display: block;
+        margin-bottom: 5px;
+      }
     }
-  }
-}
 
-.information-display {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
-    text-align: center;
-    margin-bottom: 26px;
-  }
-  @media screen and (min-width: $breakpointDesktop) {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  &__item:not(:last-child) {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      margin-bottom: 15px;
+    &__down-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      line-height: calc(27 / 20);
+
+      color: var(--primary-black-color);
     }
-    @media screen and (min-width: $breakpointDesktop) {
-      margin-right: 40px;
-    }
-  }
-
-  &__item {
-    @media screen and (min-width: $breakpointDesktop) {
-      text-align: center;
-    }
-  }
-
-  &__up-text {
-    color: var(--secondary-accent-color);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    line-height: calc(54 / 40);
-
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      display: block;
-      margin-bottom: 5px;
-    }
-  }
-
-  &__down-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    line-height: calc(27 / 20);
-
-    color: var(--primary-black-color);
   }
 }
