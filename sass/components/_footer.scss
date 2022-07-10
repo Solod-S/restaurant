@@ -1,11 +1,22 @@
 .footer {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
       url(../images/footer.jpg);
-    margin: 0 auto;
+
     max-width: 480px;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    padding: 50px 0;
+  }
+  @media screen and (min-width: $breakpointTablet) {
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+      url(../images/footer.jpg);
+
+    max-width: 768px;
+
     padding: 50px 0;
   }
   @media screen and (min-width: $breakpointDesktop) {
@@ -14,10 +25,6 @@
       url(../images/footer.jpg);
     max-width: 1920px;
     height: 900px;
-    margin: 0 auto;
-    background-size: cover;
-
-    background-repeat: no-repeat;
   }
   &__wrapper {
     @media screen and (min-width: $breakpointDesktop) {
@@ -55,7 +62,7 @@
 
   color: var(--primary-white-color);
 
-  @media screen and (max-width: $breakpointBeeforeTablet) {
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     text-align: center;
   }
 
@@ -86,13 +93,19 @@
 
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+        width: 70%;
+      }
       width: 100%;
       margin-bottom: 20px;
     }
   }
 
   &__textarea {
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      width: 70%;
+    }
     width: 100%;
 
     height: 76px;

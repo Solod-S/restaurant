@@ -1,5 +1,5 @@
 .our-dish {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     padding-bottom: 50px;
     padding-top: 100px;
   }
@@ -26,7 +26,7 @@
   }
 
   &__wrapper {
-    @media screen and (min-width: $breakpointDesktop) {
+    @media screen and (min-width: $breakpointTablet) {
       display: flex;
     }
   }
@@ -36,7 +36,11 @@
     @media screen and (max-width: $breakpointBeeforeTablet) {
       margin-bottom: 50px;
     }
-
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      width: 416px;
+      margin-right: 10px;
+      height: 503px;
+    }
     @media screen and (min-width: $breakpointDesktop) {
       margin-right: 30px;
     }
@@ -49,7 +53,7 @@
   }
 
   &__item {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       display: flex;
     }
     @media screen and (min-width: $breakpointDesktop) {
@@ -64,6 +68,9 @@
   &__item:not(:last-child) {
     @media screen and (max-width: $breakpointBeeforeTablet) {
       margin-bottom: 50px;
+    }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      margin-bottom: 41px;
     }
     @media screen and (min-width: $breakpointDesktop) {
       margin-bottom: 25px;
@@ -125,7 +132,7 @@
   }
 
   &__dscr {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       margin-left: auto;
       margin-right: auto;
       text-align: center;

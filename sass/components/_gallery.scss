@@ -1,5 +1,5 @@
 .gallery {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     padding-bottom: 70px;
     padding-top: 70px;
   }
@@ -57,11 +57,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 42%;
+    // width: 42%;
     margin-right: 10px;
   }
   &__wrapper {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       margin-bottom: 50px;
     }
     @media screen and (min-width: $breakpointDesktop) {
@@ -71,13 +71,17 @@
     }
   }
   &__img {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      min-width: 500px;
+    }
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       margin-left: auto;
       margin-right: auto;
+      width: 348px;
     }
   }
   &__item {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       margin-bottom: 20px;
     }
 
@@ -94,7 +98,7 @@
     justify-content: center;
   }
   &__item:not(:last-child) {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       margin-bottom: 20px;
     }
     @media screen and (min-width: $breakpointDesktop) {
@@ -102,7 +106,10 @@
     }
   }
   &__img {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      min-width: 500px;
+    }
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       margin-left: auto;
       margin-right: auto;
     }
