@@ -10,7 +10,18 @@
     max-width: 480px;
 
     padding: 50px 0;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/footer@2x.jpg);
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/footer@3x.jpg);
+    }
   }
+
   @media screen and (min-width: $breakpointTablet) {
     background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
       url(../images/footer.jpg);
@@ -18,14 +29,36 @@
     max-width: 768px;
 
     padding: 50px 0;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/footer@2x.jpg);
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/footer@3x.jpg);
+    }
   }
+
   @media screen and (min-width: $breakpointDesktop) {
     display: flex;
     background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
       url(../images/footer.jpg);
     max-width: 1920px;
     height: 900px;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/footer@2x.jpg);
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/footer@3x.jpg);
+    }
   }
+
   &__wrapper {
     @media screen and (min-width: $breakpointDesktop) {
       display: flex;

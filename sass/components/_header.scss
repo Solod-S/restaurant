@@ -27,6 +27,16 @@
     height: 84px;
     background-size: cover;
     opacity: 0.9;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/hero-bg@2x.jpg);
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
+        url(../images/hero-bg@3x.jpg);
+    }
   }
 
   &__wrapper {

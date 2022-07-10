@@ -33,6 +33,15 @@
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url(../images/hero-bg-mobile@2x.jpg);
+  }
+
+  @media screen and (min-resolution: 3dppx) {
+    background-image: url(../images/hero-bg-mobile@3x.jpg);
+  }
+
   @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
     background-image: url(../images/hero-bg.jpg);
     background-color: var(--bg-color);
@@ -44,6 +53,14 @@
     margin: 0 auto;
     padding-top: 205px;
     padding-bottom: 231px;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg@2x.jpg);
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: url(../images/hero-bg@3x.jpg);
+    }
   }
 
   @media screen and (min-width: $breakpointDesktop) {
@@ -56,6 +73,14 @@
     margin: 0 auto;
     padding-top: 205px;
     padding-bottom: 231px;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg@2x.jpg);
+    }
+
+    @media screen and (min-resolution: 3dppx) {
+      background-image: url(../images/hero-bg@3x.jpg);
+    }
   }
 
   &__greating {
