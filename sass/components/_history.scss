@@ -170,7 +170,12 @@
       }
     }
     &__img-zero {
-      @media screen and (max-width: $breakpointBeeforeTablet) {
+      @media screen and (max-width: $breakpointBeeforeTell) {
+        position: relative;
+        left: 27%;
+        top: 42px;
+      }
+      @media screen and (min-width: $breakpointTablet) {
         position: relative;
         left: 35%;
         top: 42px;
@@ -227,7 +232,13 @@
     }
 
     &__img-thrd {
-      @media screen and (max-width: $breakpointBeeforeTablet) {
+      @media screen and (max-width: $breakpointBeeforeTell) {
+        position: absolute;
+        left: 17%;
+        top: 114px;
+        box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+      }
+      @media screen and (min-width: $breakpointTell) {
         position: absolute;
         left: 29%;
         top: 114px;

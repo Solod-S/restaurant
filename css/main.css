@@ -1057,7 +1057,15 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .history .decoration__img-zero {
+    position: relative;
+    left: 27%;
+    top: 42px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .history .decoration__img-zero {
     position: relative;
     left: 35%;
@@ -1136,7 +1144,17 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .history .decoration__img-thrd {
+    position: absolute;
+    left: 17%;
+    top: 114px;
+    -webkit-box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 3px 1px 10px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 480px) {
   .history .decoration__img-thrd {
     position: absolute;
     left: 29%;
@@ -1650,7 +1668,7 @@ a {
 }
 
 .menu__item {
-  width: 350px;
+  max-width: 350px;
   background-color: var(--primary-white-color);
   padding: 80px 63px 29px 62px;
 }
@@ -1674,7 +1692,7 @@ a {
 .menu__img-preview-first {
   position: relative;
   margin-bottom: 22px;
-  width: 225px;
+  max-width: 225px;
   height: 225px;
   border-radius: 50%;
   background-image: url(..//images/shava.jpg);
@@ -1815,7 +1833,10 @@ a {
 }
 
 .menu__btn {
-  padding: 14px 68px;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  padding: 14px 28px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1825,6 +1846,12 @@ a {
   background: var(--bg-br-accent-color);
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 480px) {
+  .menu__btn {
+    padding: 14px 68px;
+  }
 }
 
 /* <!-- -------------------------------------------------------------------------------- FEEDBACK ----------------------------------------------------------------------------- --> */

@@ -67,7 +67,7 @@
   }
 
   &__item {
-    width: 350px;
+    max-width: 350px;
     background-color: var(--primary-white-color);
     padding: 80px 63px 29px 62px;
     @media screen and (max-width: $breakpointBeeforeTablet) {
@@ -89,7 +89,7 @@
   &__img-preview-first {
     position: relative;
     margin-bottom: 22px;
-    width: 225px;
+    max-width: 225px;
     height: 225px;
     border-radius: 50%;
     background-image: url(..//images/shava.jpg);
@@ -213,7 +213,11 @@
   }
 
   &__btn {
-    padding: 14px 68px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+
+    padding: 14px 28px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -223,5 +227,8 @@
     color: var(--primary-white-color);
     background: var(--bg-br-accent-color);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: $breakpointTell) {
+      padding: 14px 68px;
+    }
   }
 }
