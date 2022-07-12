@@ -14,9 +14,11 @@
   .hero-mobile__btn {
     background-color: transparent;
     border: none;
+    z-index: 2;
   }
-  // .hero-mobile__svg {
-  // }
+  .hero-mobile__svg {
+    z-index: 2;
+  }
   // .hero-mobile__icon-open {
   // }
   // .hero-mobile__icon-close {

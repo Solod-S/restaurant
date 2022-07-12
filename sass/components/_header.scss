@@ -2,7 +2,6 @@
   @media screen and (max-width: $breakpointBeeforeTablet) {
     display: none;
   }
-
   position: fixed;
   z-index: 22;
   top: 0;
@@ -12,9 +11,8 @@
   text-align: center;
 
   &::before {
-    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
-      max-width: 768px;
-      margin: 0 auto;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: none;
     }
     z-index: -1;
     position: fixed;
@@ -27,7 +25,10 @@
     height: 84px;
     background-size: cover;
     opacity: 0.9;
-
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      max-width: 768px;
+      margin: 0 auto;
+    }
     @media screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
         url(../images/hero-bg@2x.jpg);
@@ -40,6 +41,9 @@
   }
 
   &__wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: none;
+    }
     display: flex;
     align-items: center;
     padding-top: 6px;
