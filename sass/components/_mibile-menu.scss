@@ -1,4 +1,6 @@
 .mobile {
+  height: 100vh;
+  z-index: 1;
   @media screen and (max-width: $breakpointBeeforeTell) {
     width: 100%;
   }
@@ -10,7 +12,7 @@
   padding-left: 32px;
   padding-right: 65px;
   padding-bottom: 20px;
-  transform: translate(0, -100%);
+  transform: translate(-145%, -20px);
 
   align-items: baseline;
 
@@ -35,18 +37,19 @@
 }
 
 .mobile-menu {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  margin-left: 25px;
 }
 .mobile-menu__item {
   &:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 .mobile-menu__link {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 35px;
   line-height: calc(19 / 14);
 
   color: var(--primary-accent-color);
