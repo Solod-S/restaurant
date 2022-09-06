@@ -1,0 +1,51 @@
+.share {
+  &__bacdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  &__modal-window {
+    background-image: url(../images/share.jpeg);
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+    width: 1280px;
+    height: 905px;
+    // background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 0.4px solid black;
+
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      width: 95%;
+      padding: 22px;
+    }
+  }
+  // }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  // .modal-window {
+  //   &__close-btn {}
+  //   &__close-btn-icon {}
+}
+
+.modal-window__close-btn-icon--share {
+  fill: var(--primary-accent-color);
+}
+
+.--share {
+  background-color: aliceblue;
+}
