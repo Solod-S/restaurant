@@ -2720,6 +2720,12 @@ a {
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (min-width: 1280px) {
+  .share__title {
+    display: none;
+  }
+}
+
 .share__text {
   margin-bottom: 60px;
   text-align: center;
@@ -2729,6 +2735,12 @@ a {
   line-height: calc(46 / 40);
   color: var(--thrd-accent-color);
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1280px) {
+  .share__text {
+    display: none;
+  }
 }
 
 .share__discont {
@@ -2742,6 +2754,12 @@ a {
   display: block;
 }
 
+@media screen and (min-width: 1280px) {
+  .share__discont {
+    display: none;
+  }
+}
+
 .share__terms {
   position: absolute;
   bottom: 1%;
@@ -2751,6 +2769,12 @@ a {
   font-size: 14px;
   line-height: calc(46 / 40);
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .share__terms {
+    display: none;
+  }
 }
 
 .share__bacdrop {
@@ -2766,27 +2790,41 @@ a {
 }
 
 .share__modal-window {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.65))), url(../images/celebration.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url(../images/celebration.jpg);
-  background-size: cover;
-  background-color: #2e2e2e;
   position: absolute;
   top: 53%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 50px;
-  max-width: 528px;
-  height: 581px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 2px solid white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
+  .share__modal-window {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.65))), url(../images/celebration.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url(../images/celebration.jpg);
+    background-size: cover;
+    background-color: #2e2e2e;
+    max-width: 528px;
+    height: 581px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .share__modal-window {
     width: 95%;
     padding: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .share__modal-window {
+    background-image: url(../images/share.jpeg);
+    background-size: cover;
+    width: 1280px;
+    height: 905px;
   }
 }
 

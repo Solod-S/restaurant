@@ -8,6 +8,9 @@
     line-height: calc(46 / 40);
     color: var(--primary-white-color);
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
   &__text {
     margin-bottom: 60px;
@@ -18,6 +21,9 @@
     line-height: calc(46 / 40);
     color: var(--thrd-accent-color);
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
   &__discont {
     text-align: right;
@@ -29,6 +35,9 @@
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 
     display: block;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
   &__terms {
     position: absolute;
@@ -40,6 +49,9 @@
     font-size: 14px;
     line-height: calc(46 / 40);
     color: var(--primary-white-color);
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
   &__bacdrop {
     background-color: rgba(0, 0, 0, 0.2);
@@ -54,28 +66,35 @@
     height: 100%;
   }
   &__modal-window {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)),
-      url(../images/celebration.jpg);
-    background-size: cover;
-
-    background-color: #2e2e2e;
     position: absolute;
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     padding: 50px;
-    max-width: 528px;
-    height: 581px;
-    // width: 1280px;
-    // height: 905px;
-    // background: var(--primary-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border: 2px solid white;
+    @media screen and (max-width: 1279px) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)),
+        url(../images/celebration.jpg);
+      background-size: cover;
 
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+      background-color: #2e2e2e;
+
+      max-width: 528px;
+      height: 581px;
+
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border: 2px solid white;
+    }
+    @media screen and (min-width: $breakpointBeeforeTablet) and (max-width: $breakpointBeeforeDesktop) {
       width: 95%;
       padding: 22px;
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/share.jpeg);
+      background-size: cover;
+      width: 1280px;
+      height: 905px;
+      // background: var(--primary-white-color);
     }
   }
   // }
