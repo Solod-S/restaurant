@@ -2709,6 +2709,50 @@ a {
 }
 
 /* <!-- -------------------------------------------------------------------------------- SHARE ----------------------------------------------------------------------------- --> */
+.share__title {
+  margin-bottom: 45px;
+  text-align: center;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: calc(46 / 40);
+  color: var(--primary-white-color);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.share__text {
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(46 / 40);
+  color: var(--thrd-accent-color);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.share__discont {
+  text-align: right;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: calc(46 / 40);
+  color: var(--primary-white-color);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+
+.share__terms {
+  position: absolute;
+  bottom: 1%;
+  right: 2%;
+  font-family: 'Tinos', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(46 / 40);
+  color: var(--primary-white-color);
+}
+
 .share__bacdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -2722,19 +2766,21 @@ a {
 }
 
 .share__modal-window {
-  background-image: url(../images/share.jpeg);
-  background-color: var(--bg-color);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.65))), url(../images/celebration.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url(../images/celebration.jpg);
+  background-size: cover;
+  background-color: #2e2e2e;
   position: absolute;
   top: 53%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
-  width: 1280px;
-  height: 905px;
+  padding: 50px;
+  max-width: 528px;
+  height: 581px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 0.4px solid black;
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 767px) {
