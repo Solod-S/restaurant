@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./slick/slick.css" />
     <link rel="stylesheet" href="./slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- -------------------------------------------------------------------------------- HEADER ----------------------------------------------------------------------------- -->
@@ -103,7 +103,7 @@
       <section class="history">
         <div class="container features--modificator-container">
           <ul class="features">
-            <li class="features__item">
+            <li class="features__item" data-aos="fade-down-right">
               <div class="features__wrapper">
                 <svg class="features__icon" width="87" height="87">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
@@ -116,7 +116,7 @@
                 </p>
               </div>
             </li>
-            <li class="features__item">
+            <li class="features__item" data-aos="fade-down">
               <div class="features__wrapper">
                 <svg class="features__icon" width="87" height="87">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
@@ -128,7 +128,7 @@
                 </p>
               </div>
             </li>
-            <li class="features__item">
+            <li class="features__item" data-aos="fade-down-left">
               <div class="features__wrapper">
                 <svg class="features__icon" width="87" height="87">
                   <use href="./images/symbol-defs.svg#icon-kolpac"></use>
@@ -717,7 +717,7 @@
           </div>
           <h2 class="gallery__title">Наши <span class="color-span">Повара</span></h2>
           <ul class="working-staff">
-            <li class="working-staff__item">
+            <li class="working-staff__item" data-aos="zoom-in-left">
               <picture>
                 <source
                   srcset="
@@ -738,7 +738,7 @@
                 <img class="working-staff__img" src="./images/cook-1.jpg" alt="повар" width="348" />
               </picture>
             </li>
-            <li class="working-staff__item">
+            <li class="working-staff__item" data-aos="zoom-in">
               <picture>
                 <source
                   srcset="
@@ -759,7 +759,7 @@
                 <img class="working-staff__img" src="./images/cook-2.jpg" alt="повар" width="348" />
               </picture>
             </li>
-            <li class="working-staff__item">
+            <li data-aos="zoom-in-right">
               <picture>
                 <source
                   srcset="
@@ -918,11 +918,15 @@
         </button>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/share.js" type="module"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
