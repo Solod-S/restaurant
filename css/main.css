@@ -687,6 +687,7 @@ a {
 }
 
 .hero {
+  background-attachment: fixed;
   padding-top: 20px;
   padding-bottom: 304px;
   background-image: url(../images/hero-bg-mobile.jpg);
