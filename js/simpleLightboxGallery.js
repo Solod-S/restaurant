@@ -1,4 +1,4 @@
-const lightboxGallery = new SimpleLightbox('.gallery-cards__wrapper a', {
+const lightboxgallery = new SimpleLightbox('.gallery-cards__wrapper a', {
   // captionType: 'alt',
   // captionsData: 'alt',
   captionDelay: 200,
