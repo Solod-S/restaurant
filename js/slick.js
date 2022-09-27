@@ -51,3 +51,50 @@ $(function () {
 //     setting-name: setting-value
 //   });
 // });
+$(function () {
+  $('.clients-feedback__list').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: false,
+          autoplaySpeed: 3000,
+          arrows: false,
+          speed: 1000,
+          // centerMode: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          fade: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 1000,
+
+          vertical: false,
+
+          verticalSwiping: false,
+          arrows: false,
+          // centerMode: true,
+        },
+      },
+    ],
+  });
+});

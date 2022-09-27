@@ -18,7 +18,12 @@
   @media screen and (min-width: $breakpointDesktop) {
     padding: 150px 0;
   }
+  &__list {
+    display: flex;
+  }
+  // &__item {
 
+  // }
   &__text {
     margin-bottom: 76px;
     font-family: 'Open Sans', sans-serif;

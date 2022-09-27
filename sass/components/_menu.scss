@@ -484,6 +484,16 @@
     }
   }
 }
+.menu__list > .slick-prev.slick-arrow::before {
+  font-size: 40px;
+}
+.menu__list > .slick-next.slick-arrow::before {
+  font-size: 40px;
+}
+
+.menu__list > .slick-next {
+  right: -1px;
+}
 // .gallery__list {
 //   padding: 0px 0% 0 3% !important;
 //   // @media screen and (min-width: 401px) and (max-width: 500px) {

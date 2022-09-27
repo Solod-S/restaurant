@@ -1962,6 +1962,18 @@ a {
   }
 }
 
+.menu__list > .slick-prev.slick-arrow::before {
+  font-size: 40px;
+}
+
+.menu__list > .slick-next.slick-arrow::before {
+  font-size: 40px;
+}
+
+.menu__list > .slick-next {
+  right: -1px;
+}
+
 /* <!-- -------------------------------------------------------------------------------- FEEDBACK ----------------------------------------------------------------------------- --> */
 @media screen and (max-width: 767px) {
   .clients-feedback {
@@ -1987,6 +1999,12 @@ a {
   .clients-feedback {
     padding: 150px 0;
   }
+}
+
+.clients-feedback__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .clients-feedback__text {
