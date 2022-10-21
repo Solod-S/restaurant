@@ -5,9 +5,10 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1000,
     speed: 1000,
+    // rtl: false,
     // centerMode: true,
     responsive: [
       {
@@ -61,6 +62,7 @@ $(function () {
     autoplay: false,
     autoplaySpeed: 3000,
     speed: 1000,
+
     // centerMode: true,
     responsive: [
       {

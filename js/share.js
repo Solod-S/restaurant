@@ -1,23 +1,20 @@
-console.log(`До вызова setTimeout`);
-
+const DONTSWON_SHARE = 'dontShowShare';
+//после первого закрытия не хочу больше видеть это окно
 const share = {
   closeModalBtn: document.querySelector('[data-share-close]'),
   modal: document.querySelector('[data-share]'),
   body: document.querySelector('body'),
   onKeyPresEsq(event) {
+    const { modal, body } = this;
     if (event.code === 'Escape') {
-      share.modal.classList.add('is-hidden');
-      share.body.classList.toggle('no-scroll');
-      this.closed = true;
+      modal.classList.add('is-hidden');
+      body.classList.toggle('no-scroll');
+
       window.removeEventListener('keydown', share.onKeyPresEsq);
     }
   },
-  // toggleModal() {
-  //   window.addEventListener('keydown', share.onKeyPresEsq);
-  //   this.modal.classList.toggle('is-hidden');
-  //   this.body.classList.toggle('no-scroll');
-  // },
   closeModel() {
+    localStorage.setItem(DONTSWON_SHARE, JSON.stringify('true'));
     window.removeEventListener('keydown', share.onKeyPresEsq);
     this.modal.classList.add('is-hidden');
     this.body.classList.toggle('no-scroll');
@@ -28,11 +25,6 @@ const share = {
     this.body.classList.toggle('no-scroll');
   },
   closeOnTargetClick(event) {
-    // console.log(event.currentTarget);
-    // //event.currentTarget -- текущий єлемент где висит евент листнер
-    // console.log(event.target);
-    // // используем чтобы точно указать что выбираем
-
     if (event.currentTarget === event.target) {
       this.modal.classList.add('is-hidden');
       this.body.classList.toggle('no-scroll');
@@ -42,4 +34,6 @@ const share = {
 
 share.closeModalBtn.addEventListener('click', share.closeModel.bind(share));
 share.modal.addEventListener('click', share.closeOnTargetClick.bind(share));
-setTimeout(share.openModel.bind(share), 3000, 3);
+if (!JSON.parse(localStorage.getItem(DONTSWON_SHARE))) {
+  setTimeout(share.openModel.bind(share), 3000, 3);
+}
