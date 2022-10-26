@@ -5,10 +5,10 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     speed: 1000,
-    // rtl: false,
+
     // centerMode: true,
     responsive: [
       {
@@ -47,11 +47,7 @@ $(function () {
   });
 });
 
-// $(document).ready(function () {
-//   $('.your-class').slick({
-//     setting-name: setting-value
-//   });
-// });
+
 $(function () {
   $('.clients-feedback__list').slick({
     infinite: true,

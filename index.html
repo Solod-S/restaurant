@@ -436,7 +436,7 @@
               </div>
               <h3 class="menu__dish">Гамбургер <span class="color-span">макси</span></h3>
               <p class="menu__dscr">Максимально толстый слой мяса</p>
-              <button class="menu__btn" type="button" data-btn-order>Заказать</button>
+              <a class="menu__btn" href="#reservation" data-btn-order>Предзаказ</a>
             </li>
             <li class="menu__item menu-first">
               <div class="menu__img-preview-first">
@@ -446,7 +446,7 @@
               </div>
               <h3 class="menu__dish">Шаурма <span class="color-span">макси</span></h3>
               <p class="menu__dscr">Максимально сочная начинка</p>
-              <button class="menu__btn" type="button" data-btn-order>Заказать</button>
+              <a class="menu__btn" href="#reservation" data-btn-order>Предзаказ</a>
             </li>
             <li class="menu__item menu-first">
               <div class="menu__img-preview-first-thrd">
@@ -456,7 +456,7 @@
               </div>
               <h3 class="menu__dish">Пицца <span class="color-span">макси</span></h3>
               <p class="menu__dscr">Максимально толстый слой сыра</p>
-              <button class="menu__btn" type="button" data-btn-order>Заказать</button>
+              <a class="menu__btn" href="#reservation" data-btn-order>Предзаказ</a>
             </li>
             <li class="menu__item menu-first">
               <div class="menu__img-preview-first">
@@ -466,7 +466,7 @@
               </div>
               <h3 class="menu__dish">Шаурма <span class="color-span">макси</span></h3>
               <p class="menu__dscr">Максимально сочная начинка</p>
-              <button class="menu__btn" type="button" data-btn-order>Заказать</button>
+              <a class="menu__btn" href="#reservation" data-btn-order>Предзаказ</a>
             </li>
           </ul>
         </div>
@@ -511,11 +511,6 @@
                 </picture>
                 <h2 class="clients-feedback__title">Посетитель</h2>
                 <p class="clients-feedback__name">Николай</p>
-                <!-- <div class="clients-feedback__selectors-wrapper">
-              <span class="clients-feedback__selector"></span>
-              <span class="clients-feedback__selector"></span>
-              <span class="clients-feedback__selector is-selected"></span>
-            </div> -->
               </div>
             </li>
             <li class="clients-feedback__item">
@@ -553,11 +548,6 @@
               </picture>
               <h2 class="clients-feedback__title">Посетитель</h2>
               <p class="clients-feedback__name">Николай</p>
-              <!-- <div class="clients-feedback__selectors-wrapper">
-              <span class="clients-feedback__selector"></span>
-              <span class="clients-feedback__selector"></span>
-              <span class="clients-feedback__selector is-selected"></span>
-            </div> -->
             </li>
             <li class="clients-feedback__item">
               <p class="clients-feedback__text">
@@ -591,11 +581,6 @@
               </picture>
               <h2 class="clients-feedback__title">Посетитель</h2>
               <p class="clients-feedback__name">Николай</p>
-              <!-- <div class="clients-feedback__selectors-wrapper">
-              <span class="clients-feedback__selector"></span>
-              <span class="clients-feedback__selector"></span>
-              <span class="clients-feedback__selector is-selected"></span>
-            </div> -->
             </li>
           </ul>
         </div>
@@ -892,7 +877,12 @@
                 <input class="feedback-form__input" type="text" name="name" placeholder="Имя*" />
               </label>
               <label class="feedback-form__item">
-                <input class="feedback-form__input" type="tel" name="tel" placeholder="Телефон*" />
+                <input
+                  class="feedback-form__input"
+                  type="tel"
+                  name="pnone"
+                  placeholder="Телефон*"
+                />
               </label>
             </div>
             <label class="feedback-form__item feedback-form__item--textarea-modificator">
@@ -989,13 +979,13 @@
           </div>
           <div class="modal-window__item">
             <label class="modal-window__label" for="tel">Телефон</label>
-            <input class="modal-window__input" type="tel" name="tel" id="tel" />
+            <input class="modal-window__input" type="tel" name="pnone" id="tel" />
           </div>
           <div class="modal-window__textarea modal-textarea">
             <label class="modal-window__textarea-label" for="textarea"></label>
             <textarea
               class="modal-window__textarea-input"
-              name="textarea"
+              name="feedback"
               id="textarea"
               cols="5"
               rows="5"
@@ -1022,14 +1012,16 @@
         <p class="share__terms">*акция не действует на алколоьные напитки</p>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.5/dist/notiflix-aio-3.2.5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script src="./js/slick.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/feedback.js" type="module"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/share.js" type="module"></script>
-    <!-- <script src="./js/makeOrder.js"></script> -->
+    <script src="./js/shareAdvertising.js" type="module"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"
       integrity="sha512-XGiM73niqHXRwBELBEktUKuGXC9yHyaxEsVWvUiCph8yxkaNkGeXJnqs5Ls1RSp4Q+PITMcCy2Dw7HxkzBWQCw=="
@@ -1042,7 +1034,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/simpleLightboxGallery.js"></script>
+    <script src="./js/services/simpleLightboxGallery.js"></script>
+
     <script>
       AOS.init();
     </script>
