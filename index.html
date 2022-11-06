@@ -62,7 +62,20 @@
     <!---------------------------------------------------------------------------------- HERO ------------------------------------------------------------------------------->
     <main>
       <section class="hero" id="hero">
-        <div class="container mobile" data-menu>
+        <div class="mobile" data-menu>
+          <button
+            class="hero-mobile-close__btn"
+            type="button"
+            aria-expanded="false"
+            data-menu-button-close
+          >
+            <svg class="hero-mobile-close__svg" width="40px" height="40px" aria-label="menu">
+              <use
+                class="hero-mobile-close__icon-close"
+                href="./images/symbol-defs.svg#icon-mobile-close"
+              ></use>
+            </svg>
+          </button>
           <ul class="mobile-menu">
             <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="#menu">Меню</a>
@@ -81,16 +94,21 @@
             <a href="./index.html" class="hero-mobile__link"
               ><img class="hero-mobile__logo" src="./images/logo.svg" alt="logo" height="31"
             /></a>
-            <button class="hero-mobile__btn" type="button" aria-expanded="false" data-menu-button>
+            <button
+              class="hero-mobile__btn"
+              type="button"
+              aria-expanded="false"
+              data-menu-button-open
+            >
               <svg class="hero-mobile__svg" width="40px" height="40px" aria-label="menu">
                 <use
                   class="hero-mobile__icon-open"
                   href="./images/symbol-defs.svg#icon-menu-mob-open"
                 ></use>
-                <use
+                <!-- <use
                   class="hero-mobile__icon-close"
                   href="./images/symbol-defs.svg#icon-mobile-close"
-                ></use>
+                ></use> -->
               </svg>
             </button>
           </div>
