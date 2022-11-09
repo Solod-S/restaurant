@@ -7,7 +7,11 @@ const shareAdvertising = {
 
   start() {
     if (!JSON.parse(localStorage.getItem(DONTSWON_SHARE))) {
-      setTimeout(shareAdvertising.openModel(), 3000);
+      console.log(`!!!`);
+
+      setTimeout(() => {
+        shareAdvertising.openModel();
+      }, 1000);
     }
   },
   openModel() {
@@ -43,12 +47,12 @@ const shareAdvertising = {
   },
 };
 
-shareAdvertising.closeModalBtnEl.addEventListener(
-  'click',
-  shareAdvertising.closeModel.bind(shareAdvertising)
-);
-shareAdvertising.modalEl.addEventListener(
-  'click',
-  shareAdvertising.closeOnTargetClick.bind(shareAdvertising)
-);
-shareAdvertising.start();
+// shareAdvertising.closeModalBtnEl.addEventListener(
+//   'click',
+//   shareAdvertising.closeModel.bind(shareAdvertising)
+// );
+// shareAdvertising.modalEl.addEventListener(
+//   'click',
+//   shareAdvertising.closeOnTargetClick.bind(shareAdvertising)
+// );
+// shareAdvertising.start();
