@@ -5,9 +5,10 @@
   position: fixed;
   z-index: 22;
   top: 0;
-  left: 50%;
+  left: 0;
+  right: 0;
 
-  transform: translateX(-50%);
+  // transform: translateX(-50%);
   text-align: center;
 
   &::before {
@@ -18,8 +19,9 @@
     position: fixed;
     content: '';
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    // transform: translateX(-50%);
     background-image: url(../images/hero-bg.jpg);
     width: 1920px;
     height: 84px;
@@ -140,6 +142,9 @@
   }
 
   &__item-text {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      display: none;
+    }
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
 

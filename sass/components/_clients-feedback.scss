@@ -18,6 +18,9 @@
   @media screen and (min-width: $breakpointDesktop) {
     padding: 150px 0;
   }
+  @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+    max-width: 768px;
+  }
   &__list {
     display: flex;
   }

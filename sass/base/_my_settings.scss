@@ -59,13 +59,13 @@ a {
   padding-right: 15px;
 
   @media screen and (min-width: $breakpointTell) {
-    width: $breakpointTell;
+    max-width: $breakpointTell;
   }
   @media screen and (min-width: $breakpointTablet) {
-    width: $breakpointTablet;
+    max-width: $breakpointTablet;
   }
   @media screen and (min-width: $breakpointDesktop) {
-    width: $breakpointDesktop;
+    max-width: $breakpointDesktop;
   }
 }
 

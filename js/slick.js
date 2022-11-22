@@ -47,7 +47,6 @@ $(function () {
   });
 });
 
-
 $(function () {
   $('.clients-feedback__list').slick({
     infinite: true,

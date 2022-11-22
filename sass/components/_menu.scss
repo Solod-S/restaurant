@@ -35,6 +35,9 @@
     @media screen and (min-resolution: 3dppx) {
       background-image: url(../images/menu-bg@3x.jpg);
     }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
+      max-width: 768px;
+    }
   }
 
   &__title {
@@ -230,7 +233,11 @@
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 14px 28px;
+    padding: 10px;
+    display: block;
+    max-width: 80%;
+    text-align: center;
+    // padding: 14px 28px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -248,7 +255,8 @@
       transform: scale(1.1);
     }
     @media screen and (min-width: $breakpointTell) {
-      padding: 14px 68px;
+      padding: 10px;
+      // padding: 14px 68px;
     }
   }
 }
