@@ -463,6 +463,7 @@ a {
           transform: scale(1.3);
 }
 .navigation-panel__link {
+  padding: 10px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;

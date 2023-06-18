@@ -8,8 +8,8 @@ const onSubmit = event => {
   const { name, feedback, pnone } = event.currentTarget.elements;
 
   if (!name.value || !feedback.value || !pnone.value) {
-    Notiflix.Notify.failure('Внимание! Все поля должны быть заполнены.');
-    console.log(`Внимание! Все поля должны быть заполнены`);
+    Notiflix.Notify.failure('Attention! All fields must be filled.');
+    console.log(`Attention! All fields must be filled.`);
     return;
   }
   const capturedData = new FormData(event.currentTarget);
