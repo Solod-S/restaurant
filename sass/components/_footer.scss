@@ -2,6 +2,7 @@
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
+  flex-direction: column;
 
   @media screen and (max-width: $breakpointBeeforeDesktop) {
     background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
@@ -46,7 +47,7 @@
     background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
       url(../images/footer.jpg);
     max-width: 1920px;
-    height: 900px;
+    // height: 900px;
 
     @media screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)),
@@ -68,7 +69,10 @@
 
 .feedback {
   @media screen and (min-width: $breakpointDesktop) {
-    padding: 130px 20px;
+    // padding: 130px 20px;
+    padding-top: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 50%;
   }
 
@@ -180,7 +184,7 @@
 .our-contacts {
   @media screen and (min-width: $breakpointDesktop) {
     padding-top: 130px;
-    padding-bottom: 130px;
+    // padding-bottom: 130px;
     padding-left: 120px;
     padding-right: 20px;
     width: 50%;
@@ -201,6 +205,7 @@
 
 .address {
   font-style: normal;
+  padding-bottom: 20px;
 
   &__list {
     margin-bottom: 20px;
