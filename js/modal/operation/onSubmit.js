@@ -23,8 +23,8 @@ const onSubmit = event => {
     body.classList.toggle('no-scroll');
   });
 
-  Notiflix.Notify.info('Мы собрали данные, скоро с Вами свяжиться наш менеджер');
-  console.log(`Мы собрали данные, скоро с Вами свяжиться наш менеджер`);
+  Notiflix.Notify.info('We have collected the data, our manager will contact you soon');
+  console.log(`We have collected the data, our manager will contact you soon`);
   console.log('Мы собрали данные ==>', saveData);
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);

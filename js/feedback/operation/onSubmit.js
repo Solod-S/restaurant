@@ -18,7 +18,7 @@ const onSubmit = event => {
     saveData[key] = value;
   });
 
-  Notiflix.Notify.info('Спасибо за Ваш отзыв, Ваше мнение очень важно для нас.');
+  Notiflix.Notify.info('Thank you for your feedback, your opinion is very important to us.');
   console.log(`Спасибо за Ваш отзыв`);
   console.log('Мы собрали данные ==>', saveData);
   event.currentTarget.reset();
